@@ -19,6 +19,7 @@
 * [Platypus](talks/platypus.md)
 * [Hashbounty](talks/hashbounty.md)
 * [Breaking Same-Origin](talks/breaking-same-origin.md)
+* [Lateral Movement in Linux Environments](talks/lateral-movement-in-linux-environments.md)
 * [WiMAX Hacking](talks/wimax-hacking.md)
 * [Seeds of Contempt](talks/seeds-of-contempt.md)
 * [LibOMG](talks/libomg.md)
