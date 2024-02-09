@@ -15,3 +15,11 @@ Please do hit me up on any of the socials if you have any questions/feedback abo
 * [https://warpcast.com/deanpierce](https://warpcast.com/deanpierce)
 * [https://defcon.social/@deanpierce](https://defcon.social/@deanpierce)
 
+Blogs:
+
+* [https://www.pxdojo.net](https://www.pxdojo.net/)
+* [https://www.publish0x.com/titor-technologies](https://www.publish0x.com/titor-technologies)
+
+Comms:
+
+If you know me, I prefer comms over Signal. If not, DMs on any of the socials above might work. Also sometimes I respond on Telegram and Discord where I'm at @deanpierce.&#x20;
