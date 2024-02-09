@@ -4,6 +4,6 @@ description: Automated tooling for bypassing captive portals
 
 # Pickupline
 
-Delivered at DEF CON 13 in 2005   TODO
+My first talk at a hacker con! Delivered at DEF CON 13 in 2005
 
-As seen in in the SANS 660 course
+As seen in in the SANS 660 course!
