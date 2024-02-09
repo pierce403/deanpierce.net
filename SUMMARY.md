@@ -23,6 +23,7 @@
 * [NWeb](projects/nweb/README.md)
   * [Masspull](projects/nweb/masspull.md)
   * [Scan Token](projects/nweb/scan-token.md)
+* [ETH Hax](projects/eth-hax.md)
 * [Kaginawa](projects/kaginawa.md)
 * [Crypto.me](projects/crypto.me.md)
 * [ddrp.io](projects/ddrp.io.md)
