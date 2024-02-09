@@ -10,6 +10,7 @@
   * [They Put Money on the Internet!](talks/web3-hacking/they-put-money-on-the-internet.md)
   * [Close Encounters of the Third Web](talks/web3-hacking/close-encounters-of-the-third-web.md)
   * [Blockchains and Privacy](talks/web3-hacking/blockchains-and-privacy.md)
+  * [That Toorcamp Web3 thing](talks/web3-hacking/that-toorcamp-web3-thing.md)
 * [DIY Black Badge](talks/diy-black-badge.md)
 * [NSA Playset](talks/nsa-playset/README.md)
   * [NSA Playset : GSM](talks/nsa-playset/nsa-playset-gsm.md)
@@ -19,6 +20,7 @@
 * [Hashbounty](talks/hashbounty.md)
 * [WiMAX Hacking](talks/wimax-hacking.md)
 * [Seeds of Contempt](talks/seeds-of-contempt.md)
+* [LibOMG](talks/libomg.md)
 * [Pickupline](talks/pickupline.md)
 
 ## 🛠 PROJECTS
