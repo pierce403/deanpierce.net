@@ -15,6 +15,7 @@
 * [NSA Playset](talks/nsa-playset/README.md)
   * [NSA Playset : GSM](talks/nsa-playset/nsa-playset-gsm.md)
   * [NSA Playset : Intro](talks/nsa-playset/nsa-playset-intro.md)
+* [CheapBugs](talks/cheapbugs.md)
 * [Platypus](talks/platypus.md)
 * [Exploiting Web Runtimes](talks/exploiting-web-runtimes.md)
 * [Hashbounty](talks/hashbounty.md)
