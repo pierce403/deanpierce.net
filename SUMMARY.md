@@ -5,7 +5,10 @@
 ## 📣 TALKS
 
 * [Zero Knowledge VM Hijinks](talks/zero-knowledge-vm-hijinks.md)
-* [Money on the Internet](talks/money-on-the-internet.md)
+* [Web3 Hacking](talks/web3-hacking/README.md)
+  * [They Put Money on the Internet!](talks/web3-hacking/they-put-money-on-the-internet.md)
+  * [Close Encounters of the Third Web](talks/web3-hacking/close-encounters-of-the-third-web.md)
+  * [Blockchains and Privacy](talks/web3-hacking/blockchains-and-privacy.md)
 * [DIY Black Badge](talks/diy-black-badge.md)
 * [NSA Playset](talks/nsa-playset/README.md)
   * [NSA Playset : GSM](talks/nsa-playset/nsa-playset-gsm.md)
