@@ -5,6 +5,7 @@
 ## 📣 TALKS
 
 * [Zero Knowledge VM Hijinks](talks/zero-knowledge-vm-hijinks.md)
+* [Rolodex](talks/rolodex.md)
 * [Web3 Hacking](talks/web3-hacking/README.md)
   * [They Put Money on the Internet!](talks/web3-hacking/they-put-money-on-the-internet.md)
   * [Close Encounters of the Third Web](talks/web3-hacking/close-encounters-of-the-third-web.md)
