@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Dean Pierce](README.md)
+* [About Me](README.md)
 
 ## 📣 TALKS
 
