@@ -7,11 +7,13 @@
 * [Zero Knowledge VM Hijinks](talks/zero-knowledge-vm-hijinks.md)
 * [Money on the Internet](talks/money-on-the-internet.md)
 * [DIY Black Badge](talks/diy-black-badge.md)
-* [NSA Playset : GSM](talks/nsa-playset-gsm.md)
-* [NSA Playset : Intro](talks/nsa-playset-intro.md)
-* [Exploiting Web Runtimes](talks/exploiting-web-runtimes.md)
-* [Hashbounty](talks/hashbounty.md)
+* [NSA Playset](talks/nsa-playset/README.md)
+  * [NSA Playset : GSM](talks/nsa-playset/nsa-playset-gsm.md)
+  * [NSA Playset : Intro](talks/nsa-playset/nsa-playset-intro.md)
 * [Seeds of Contempt](talks/seeds-of-contempt.md)
+* [WiMAX Hacking](talks/wimax-hacking.md)
+* [Hashbounty](talks/hashbounty.md)
+* [Exploiting Web Runtimes](talks/exploiting-web-runtimes.md)
 * [Pickupline](talks/pickupline.md)
 
 ## 🛠 PROJECTS
