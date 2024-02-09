@@ -7,6 +7,7 @@
 * [Zero Knowledge VM Hijinks](talks/zero-knowledge-vm-hijinks.md)
 * [Money on the Internet](talks/money-on-the-internet.md)
 * [DIY Black Badge](talks/diy-black-badge.md)
+* [Platypus](talks/platypus.md)
 * [NSA Playset](talks/nsa-playset/README.md)
   * [NSA Playset : GSM](talks/nsa-playset/nsa-playset-gsm.md)
   * [NSA Playset : Intro](talks/nsa-playset/nsa-playset-intro.md)
