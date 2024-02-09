@@ -17,7 +17,7 @@
   * [NSA Playset : Intro](talks/nsa-playset/nsa-playset-intro.md)
 * [CheapBugs](talks/cheapbugs.md)
 * [Platypus](talks/platypus.md)
-* [Exploiting Web Runtimes](talks/exploiting-web-runtimes.md)
+* [Breaking Same-Origin](talks/breaking-same-origin.md)
 * [Hashbounty](talks/hashbounty.md)
 * [WiMAX Hacking](talks/wimax-hacking.md)
 * [Seeds of Contempt](talks/seeds-of-contempt.md)
