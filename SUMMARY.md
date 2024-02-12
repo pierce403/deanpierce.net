@@ -4,7 +4,10 @@
 
 ## 📣 TALKS
 
-* [Zero Knowledge VM Hijinks](talks/zero-knowledge-vm-hijinks.md)
+* [Zero Knowledge VM Hijinks](talks/zero-knowledge-vm-hijinks/README.md)
+  * [ZK Execution Environments](talks/zero-knowledge-vm-hijinks/zk-execution-environments.md)
+  * [ZK Execution Environments 2](talks/zero-knowledge-vm-hijinks/zk-execution-environments-2.md)
+  * [ZK VM Hijinks](talks/zero-knowledge-vm-hijinks/zk-vm-hijinks.md)
 * [Rolodex](talks/rolodex.md)
 * [Web3 Hacking](talks/web3-hacking/README.md)
   * [They Put Money on the Internet!](talks/web3-hacking/they-put-money-on-the-internet.md)
