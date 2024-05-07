@@ -28,7 +28,7 @@
 * [LibOMG](talks/libomg.md)
 * [Pickupline](talks/pickupline.md)
 
-## 🛠 PROJECTS
+## 🛠️ PROJECTS
 
 * [Bastet.ai](projects/bastet.ai.md)
 * [ZK Bounty](projects/zk-bounty.md)
