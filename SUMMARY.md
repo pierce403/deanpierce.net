@@ -5,6 +5,7 @@
 ## 📣 TALKS
 
 * [Zero Knowledge VM Hijinks](talks/zero-knowledge-vm-hijinks/README.md)
+  * [Page](talks/zero-knowledge-vm-hijinks/page.md)
   * [ZK Execution Environments](talks/zero-knowledge-vm-hijinks/zk-execution-environments.md)
   * [ZK Execution Environments 2](talks/zero-knowledge-vm-hijinks/zk-execution-environments-2.md)
   * [ZK VM Hijinks](talks/zero-knowledge-vm-hijinks/zk-vm-hijinks.md)
