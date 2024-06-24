@@ -18,6 +18,9 @@ Please do hit me up on any of the socials if you have any questions/feedback abo
 * [https://www.twitter.com/deanpierce](https://twitter.com/deanpierce)
 * [https://warpcast.com/deanpierce](https://warpcast.com/deanpierce)
 * [https://defcon.social/@deanpierce](https://defcon.social/@deanpierce)
+* [https://t.me/deanpierce](https://t.me/deanpierce)
+
+
 
 Blogs:
 
@@ -26,4 +29,4 @@ Blogs:
 
 Comms:
 
-If you know me, I prefer comms over Signal. If not, DMs on any of the socials above might work. Also sometimes I respond on Telegram and Discord where I'm at @deanpierce.&#x20;
+If you know me, I prefer comms over Signal (pierce.403). If not, DMs on any of the socials above might work. Also sometimes I respond on Telegram and Discord where I'm at @deanpierce.&#x20;
