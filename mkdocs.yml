@@ -60,9 +60,9 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
+    - toc.follow
     - search.highlight
     - search.suggest
     - content.code.copy
