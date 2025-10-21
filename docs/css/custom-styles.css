@@ -1,0 +1,4 @@
+/* Allow long navigation titles to wrap cleanly when all sections are expanded */
+.md-nav__link {
+  white-space: normal;
+}
