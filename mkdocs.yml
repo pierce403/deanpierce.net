@@ -61,6 +61,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - search.highlight
     - search.suggest
     - content.code.copy
@@ -97,6 +98,3 @@ plugins:
 
 extra_css:
   - css/custom-styles.css
-
-extra_javascript:
-  - js/expand-nav.js
