@@ -1,0 +1,83 @@
+site_name: "DeanPierce.net"
+site_url: https://deanpierce.net
+site_description: Infosec, Crypto, Privacy, Futurism
+repo_url: https://github.com/pierce403/deanpierce.net
+repo_name: pierce403/deanpierce.net
+
+nav:
+  - Home: index.md
+  - Talks:
+      - Zero Knowledge VM Hijinks:
+          - Overview: talks/zero-knowledge-vm-hijinks/index.md
+          - Page: talks/zero-knowledge-vm-hijinks/page.md
+          - ZK Execution Environments: talks/zero-knowledge-vm-hijinks/zk-execution-environments.md
+          - ZK Execution Environments 2: talks/zero-knowledge-vm-hijinks/zk-execution-environments-2.md
+          - ZK VM Hijinks: talks/zero-knowledge-vm-hijinks/zk-vm-hijinks.md
+      - Rolodex: talks/rolodex.md
+      - Web3 Hacking:
+          - Overview: talks/web3-hacking/index.md
+          - They Put Money on the Internet!: talks/web3-hacking/they-put-money-on-the-internet.md
+          - Close Encounters of the Third Web: talks/web3-hacking/close-encounters-of-the-third-web.md
+          - Blockchains and Privacy: talks/web3-hacking/blockchains-and-privacy.md
+          - That Toorcamp Web3 Thing: talks/web3-hacking/that-toorcamp-web3-thing.md
+      - DIY Black Badge: talks/diy-black-badge.md
+      - NSA Playset:
+          - Overview: talks/nsa-playset/index.md
+          - "NSA Playset : Intro": talks/nsa-playset/nsa-playset-intro.md
+          - "NSA Playset : GSM": talks/nsa-playset/nsa-playset-gsm.md
+      - CheapBugs: talks/cheapbugs.md
+      - Platypus: talks/platypus.md
+      - Hashbounty: talks/hashbounty.md
+      - Breaking Same-Origin: talks/breaking-same-origin.md
+      - Lateral Movement in Linux Environments: talks/lateral-movement-in-linux-environments.md
+      - WiMAX Hacking: talks/wimax-hacking.md
+      - Seeds of Contempt: talks/seeds-of-contempt.md
+      - LibOMG: talks/libomg.md
+      - Pickupline: talks/pickupline.md
+  - Projects:
+      - Bastet.ai: projects/bastet.ai.md
+      - ZK Bounty: projects/zk-bounty.md
+      - NWeb:
+          - Overview: projects/nweb/index.md
+          - Masspull: projects/nweb/masspull.md
+          - Scan Token: projects/nweb/scan-token.md
+      - ponzi.finance: projects/ponzi.finance.md
+      - Birdfeeder: projects/birdfeeder.md
+      - ETH Hax: projects/eth-hax.md
+      - Webmine: projects/webmine.md
+      - BTC Now: projects/btc-now.md
+      - BTC Pipe: projects/btc-pipe.md
+      - BTC Lotto: projects/btc-lotto.md
+      - CrackMyWallet: projects/crackmywallet.md
+      - Kaginawa: projects/kaginawa.md
+      - Crypto.me: projects/crypto.me.md
+      - ddrp.io: projects/ddrp.io.md
+      - cors.io: projects/cors.io.md
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - meta
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - def_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+
+plugins:
+  - search

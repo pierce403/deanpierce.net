@@ -1,50 +1,10 @@
-# Table of contents
+# Legacy GitBook summary
 
-* [About Me](README.md)
+This file is preserved for historical reference only.
 
-## 📣 TALKS
+The site navigation is now driven by `mkdocs.yml`, which mirrors the full content tree under `docs/`.
 
-* [Zero Knowledge VM Hijinks](talks/zero-knowledge-vm-hijinks/README.md)
-  * [Page](talks/zero-knowledge-vm-hijinks/page.md)
-  * [ZK Execution Environments](talks/zero-knowledge-vm-hijinks/zk-execution-environments.md)
-  * [ZK Execution Environments 2](talks/zero-knowledge-vm-hijinks/zk-execution-environments-2.md)
-  * [ZK VM Hijinks](talks/zero-knowledge-vm-hijinks/zk-vm-hijinks.md)
-* [Rolodex](talks/rolodex.md)
-* [Web3 Hacking](talks/web3-hacking/README.md)
-  * [They Put Money on the Internet!](talks/web3-hacking/they-put-money-on-the-internet.md)
-  * [Close Encounters of the Third Web](talks/web3-hacking/close-encounters-of-the-third-web.md)
-  * [Blockchains and Privacy](talks/web3-hacking/blockchains-and-privacy.md)
-  * [That Toorcamp Web3 thing](talks/web3-hacking/that-toorcamp-web3-thing.md)
-* [DIY Black Badge](talks/diy-black-badge.md)
-* [NSA Playset](talks/nsa-playset/README.md)
-  * [NSA Playset : Intro](talks/nsa-playset/nsa-playset-intro.md)
-  * [NSA Playset : GSM](talks/nsa-playset/nsa-playset-gsm.md)
-* [CheapBugs](talks/cheapbugs.md)
-* [Platypus](talks/platypus.md)
-* [Hashbounty](talks/hashbounty.md)
-* [Breaking Same-Origin](talks/breaking-same-origin.md)
-* [Lateral Movement in Linux Environments](talks/lateral-movement-in-linux-environments.md)
-* [WiMAX Hacking](talks/wimax-hacking.md)
-* [Seeds of Contempt](talks/seeds-of-contempt.md)
-* [LibOMG](talks/libomg.md)
-* [Pickupline](talks/pickupline.md)
+If you need to add new pages:
 
-## 🛠️ PROJECTS
-
-* [Bastet.ai](projects/bastet.ai.md)
-* [ZK Bounty](projects/zk-bounty.md)
-* [NWeb](projects/nweb/README.md)
-  * [Masspull](projects/nweb/masspull.md)
-  * [Scan Token](projects/nweb/scan-token.md)
-* [ponzi.finance](projects/ponzi.finance.md)
-* [Birdfeeder](projects/birdfeeder.md)
-* [ETH Hax](projects/eth-hax.md)
-* [Webmine](projects/webmine.md)
-* [BTC Now](projects/btc-now.md)
-* [BTC Pipe](projects/btc-pipe.md)
-* [BTC Lotto](projects/btc-lotto.md)
-* [CrackMyWallet](projects/crackmywallet.md)
-* [Kaginawa](projects/kaginawa.md)
-* [Crypto.me](projects/crypto.me.md)
-* [ddrp.io](projects/ddrp.io.md)
-* [cors.io](projects/cors.io.md)
+1. Create the Markdown file under `docs/` (mirroring the existing folder structure).
+2. Update the `nav` section in `mkdocs.yml` so MkDocs exposes the page in the sidebar.

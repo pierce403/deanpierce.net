@@ -1,32 +1,29 @@
----
-description: Infosec, Crypto, Privacy, Futurism
----
+# deanpierce.net
 
-# About Me
+This repository contains the MkDocs source for [deanpierce.net](https://deanpierce.net), a collection of personal projects, talks, and research notes.
 
-Hello, my name is Dean Pierce. I'm a security researcher from Portland, Oregon with a special focus on offensive technologies. I have a core belief that proliferation of increasingly advanced technologies is required for the long term survival of humanity. A key decelerator of these technologies is the very real and legitimate fear people have due to reckless security practices in the tech industry that leave people open to rampant crime.
+The GitBooks layout has been replaced with a standard MkDocs build so that everything can be versioned and deployed via GitHub Pages.
 
-How does this crime happen? How will crime happen in the future? What can we do now to ensure that people are empowered by these emerging technologies without the mental burden of lingering fear? These are the key issues I seek to address in all the work I do.
+## Quick start
 
-<mark style="color:red;">(under heavy construction at the moment, please check back later)</mark>
+- `source activate.sh` – create/activate the virtualenv and install dependencies.
+- `./serve.sh` – run `mkdocs serve` with live reload at <http://127.0.0.1:8000>.
+- `./build.sh` – generate the static site into the `site/` directory.
 
-Please do hit me up on any of the socials if you have any questions/feedback about anything here.
+## Deployment
 
-* deanpierce.eth
-* [www.linkedin.com/in/deanpierce](https://www.linkedin.com/in/deanpierce)
-* [www.github.com/pierce403](https://github.com/pierce403)
-* [https://www.twitter.com/deanpierce](https://twitter.com/deanpierce)
-* [https://warpcast.com/deanpierce](https://warpcast.com/deanpierce)
-* [https://defcon.social/@deanpierce](https://defcon.social/@deanpierce)
-* [https://t.me/deanpierce](https://t.me/deanpierce)
+Pushing to `main` automatically runs the GitHub Actions workflow in `.github/workflows/deploy.yml`.  
+The job installs dependencies, builds the site with `mkdocs build --strict`, and publishes the artifacts to the `gh-pages` branch using the built-in `GITHUB_TOKEN`. The `CNAME` record is bundled in the build so GitHub Pages keeps the `deanpierce.net` domain.
 
+## Project layout
 
+- `docs/` – all site content (Markdown). `docs/index.md` is the landing page that used to live in GitBooks `README.md`.
+- `mkdocs.yml` – navigation tree that mirrors the former `SUMMARY.md` table of contents.
+- `requirements.txt` – Python dependencies (`mkdocs`, `mkdocs-material`, `pymdown-extensions`).
+- `activate.sh`, `serve.sh`, `build.sh` – convenience scripts modelled after the `titor.tech` project.
 
-Blogs:
+## Editing content
 
-* [https://www.pxdojo.net](https://www.pxdojo.net/)
-* [https://www.publish0x.com/titor-technologies](https://www.publish0x.com/titor-technologies)
-
-Comms:
-
-If you know me, I prefer comms over Signal (pierce.403). If not, DMs on any of the socials above might work. Also sometimes I respond on Telegram and Discord where I'm at @deanpierce.&#x20;
+- Add or modify Markdown inside `docs/`; MkDocs picks up folders as sections.
+- Update `mkdocs.yml` whenever pages are added or renamed so the navigation stays in sync.
+- Use `mkdocs serve` while editing to verify links and embedded media before publishing.
