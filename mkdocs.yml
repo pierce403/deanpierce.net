@@ -7,6 +7,11 @@ repo_name: pierce403/deanpierce.net
 nav:
   - Home: index.md
   - Talks:
+      - Portland Hacker Foundation:
+          - Overview: talks/portland-hacker-foundation/index.md
+          - BSides Portland 2024: talks/portland-hacker-foundation/bsides-portland-2024.md
+          - HACKBOAT June 2025: talks/portland-hacker-foundation/hackboat-june-2025.md
+          - BSides Portland 2025: talks/portland-hacker-foundation/october-2025.md
       - Zero Knowledge VM Hijinks:
           - Overview: talks/zero-knowledge-vm-hijinks/index.md
           - Page: talks/zero-knowledge-vm-hijinks/page.md
