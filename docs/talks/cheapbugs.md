@@ -10,4 +10,4 @@ This project was inspired by high end exploit feeds offered by groups like Exodu
 
 code: [https://github.com/pierce403/CheapBugs](https://github.com/pierce403/CheapBugs)
 
-{% embed url="https://www.youtube.com/watch?v=tksYvAVKqxM" %}
+[View resource](https://www.youtube.com/watch?v=tksYvAVKqxM){ target=_blank }

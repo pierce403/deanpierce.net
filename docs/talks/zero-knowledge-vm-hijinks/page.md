@@ -2,10 +2,11 @@
 
 Another thing here
 
-{% embed url="https://docs.google.com/presentation/d/1HqDhHnnVW2bXSOJ88e9hHCtCYDonkvGivtz53xfkfDo/edit" %}
+[View resource](https://docs.google.com/presentation/d/1HqDhHnnVW2bXSOJ88e9hHCtCYDonkvGivtz53xfkfDo/edit){ target=_blank }
+
 a thing
-{% endembed %}
+
 
 another thing
 
-{% embed url="https://docs.google.com/presentation/d/1HqDhHnnVW2bXSOJ88e9hHCtCYDonkvGivtz53xfkfDo/edit" %}
+[View resource](https://docs.google.com/presentation/d/1HqDhHnnVW2bXSOJ88e9hHCtCYDonkvGivtz53xfkfDo/edit){ target=_blank }
