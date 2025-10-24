@@ -14,5 +14,5 @@ During the HACKBOAT 2025 cruise I delivered an update on the Portland Hacker Fou
 
 ## Resources
 
-- Slides: _coming soon_
+- [View Slides](https://docs.google.com/presentation/d/1QMqArJHL62U8h0S-z9KwHbdzxtpzGCQB7dg44gRnwS8/edit?slide=id.p#slide=id.p){ target=_blank }
 - Grants program: [https://deanpierce.net/talks/portland-hacker-foundation/](https://deanpierce.net/talks/portland-hacker-foundation/)
