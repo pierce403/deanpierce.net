@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#zk-vm-hijinks" class="md-skip">
+        <a href="#zero-knowledge-vm-hijinks" class="md-skip">
           Skip to content
         </a>
       
@@ -534,29 +534,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../page/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Page
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../zk-execution-environments/" class="md-nav__link">
         
   
@@ -612,6 +589,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ZK VM Hijinks
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -623,6 +613,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1694,6 +1721,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1711,8 +1764,21 @@
   
 
 
-<h1 id="zk-vm-hijinks">ZK VM Hijinks<a class="headerlink" href="#zk-vm-hijinks" title="Permanent link">&para;</a></h1>
-<p><a href="https://docs.google.com/presentation/d/1VnrdIbo-lE91Dfr2PVkQfHGQzRFrk1arAIzUMhlKHI8/edit#slide=id.p" target="_blank">View resource</a></p>
+<h1 id="zero-knowledge-vm-hijinks">Zero Knowledge VM Hijinks<a class="headerlink" href="#zero-knowledge-vm-hijinks" title="Permanent link">&para;</a></h1>
+<p>Presented at Hushcon Seattle 2023, this talk focused on security and privacy implications of ZK Virtual Machines, with particular emphasis on automated bug markets and self-healing software supply chains.</p>
+<h2 id="highlights">Highlights<a class="headerlink" href="#highlights" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Explained ZK Virtual Machines: Provers execute arbitrary programs with private inputs/outputs and generate "receipts" proving correct execution; Verifiers confirm legitimacy without knowing private data</li>
+<li>Noted that programs execute slower in zkVMs but provide mathematical certainty of correct execution (with caveats discussed in Part 4)</li>
+<li>Traced ZK evolution through Proofs, Gadgets (Cathie Yun's work), Circuits (CIRCOM), and Virtual Machines (RiscZero, Polygon ZkEVM)</li>
+<li><strong>Featured Proof of Exploitability prominently</strong>: demonstrating how to prove bugs in software without disclosing exploit details, enabling automated triage and private bug markets</li>
+<li>Explored implications for self-healing software supply chains: combining ZK proofs with automated vulnerability discovery and remediation</li>
+<li>Discussed ZK applications: identity systems, Tornado.cash, Dark Forest's ZK MMO mechanics, ZKML for verifiable AI, blockchain scaling through ZkEVM, and governance with configurable privacy</li>
+<li>Addressed security community concerns about ZK technology potentially enabling ZK ransomware scenarios</li>
+<li>Positioned automated bug markets as a pathway to economically incentivize security improvements across the software ecosystem</li>
+</ul>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.google.com/presentation/d/1VnrdIbo-lE91Dfr2PVkQfHGQzRFrk1arAIzUMhlKHI8/edit#slide=id.p" target="_blank">View Slides</a></p>
 
 
 
