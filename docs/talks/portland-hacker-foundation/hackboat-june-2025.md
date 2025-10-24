@@ -8,9 +8,12 @@ During the HACKBOAT 2025 cruise I delivered an update on the Portland Hacker Fou
 
 ## Highlights
 
-- Announced the first three micro-grants backing hardware security, AI red-teaming, and privacy tooling.
-- Shared early research outcomes and how the foundation mentors teams through monthly office hours.
-- Outlined governance plans and community partnerships for the rest of 2025.
+- Achieved 501(c)(3) tax-exempt status and established the foundation infrastructure (Umpqua bank account, Vanguard investment account, PayPal for donations)
+- Received initial $45k tax-deductible donation, invested in VGT shares (holding 57 shares)
+- Distributed first grant funds to Maya and Rey
+- Established regular HACKLUNCH gatherings at PDX Hackerspace (CTRL-H) for community engagement
+- Completed 2024 tax filings and all Oregon state requirements
+- Announced 503 Party Fundraiser event
 
 ## Resources
 
