@@ -18,7 +18,7 @@ Please do hit me up on any of the socials if you have any questions/feedback abo
 - [LinkedIn](https://www.linkedin.com/in/deanpierce)
 - [GitHub](https://github.com/pierce403)
 - [Twitter/X](https://twitter.com/deanpierce)
-- [Warpcast](https://warpcast.com/deanpierce)
+- [Farcaster](https://farcaster.xyz/deanpierce)
 - [Mastodon](https://defcon.social/@deanpierce)
 - [Telegram](https://t.me/deanpierce)
 
