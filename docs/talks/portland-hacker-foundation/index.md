@@ -2,7 +2,7 @@
 
 The Portland Hacker Foundation (PDXHF) is a 501(c)(3) nonprofit organization dedicated to empowering the hacker community in Portland, Oregon. The foundation collects tax-deductible donations and distributes them as grants to people or groups building impactful projects, with a strong emphasis on information security and related fields that embody the hacker ethos.
 
-[Visit pdxhf.org](https://pdxhf.org){ target=_blank }
+[Website: PDXHF.ORG](https://pdxhf.org){ target=_blank }
 
 ## Mission
 
