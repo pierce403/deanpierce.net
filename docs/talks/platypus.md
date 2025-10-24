@@ -8,7 +8,7 @@ Delivered at BSides Las Vegas Underground track the same morning as Silk Road go
 
 The silk road thing was actually super relevant because I had an awesome demo where I could extract the silk road passwords of everyone on the local network (so long as they had their password saved in their password manager and were using the same browser that they use for day to day stuff).
 
-My tool would basically look for an unecrypted HTTP request, intercetpt it, and then deliver the stage 1 payload which would inject a hidden iframe into the target page.
+My tool would basically look for an unencrypted HTTP request, intercept it, and then deliver the stage 1 payload which would inject a hidden iframe into the target page.
 
 The hidden iframe would then make several more hidden iframes&#x20;
 

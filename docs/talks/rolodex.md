@@ -10,5 +10,5 @@ Code: [https://github.com/pierce403/rolodex](https://github.com/pierce403/rolode
 
 [View resource](https://docs.google.com/presentation/d/1-92H8zSuO98KOGn7YN9WTkNIGYaC_YkcmP6CXJbtSUQ/edit){ target=_blank }
 
-Video:   Video exists, but I can't find it right now. If you want to see it, bug me and I'll probabally be able to find it later :-D
+Video:   Video exists, but I can't find it right now. If you want to see it, bug me and I'll probably be able to find it later :-D
 
