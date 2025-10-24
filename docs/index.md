@@ -27,4 +27,13 @@ Blogs:
 
 Comms:
 
-If you know me, I prefer comms over Signal (pierce.403). If not, DMs on any of the socials above might work. Also sometimes I respond on Telegram and Discord where I'm at @deanpierce.&#x20;
+If you know me, I prefer comms over Signal (pierce.403). If not, DMs on any of the socials above might work. Also sometimes I respond on Telegram and Discord where I'm at @deanpierce.
+
+## Bug Bounty
+
+Found a typo or inaccuracy on this site? I'll pay you for it!
+
+* **$10** for any typo or inaccuracy - report it via Signal (pierce.403)
+* **$20** if you send a [pull request on GitHub](https://github.com/pierce403/deanpierce.net)
+
+Help keep this site accurate and earn some coffee money. Every little bit helps improve the quality of the content!
