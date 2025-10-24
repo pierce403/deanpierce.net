@@ -14,5 +14,5 @@ At BSides Portland 2024 I announced the concept for the Portland Hacker Foundati
 
 ## Resources
 
-- Slides: _coming soon_
+- [View Slides](https://gamma.app/docs/Portland-Hacker-Foundation-jno0rsrcnki80rl){ target=_blank }
 - Contact: deanpierce.eth / dean@deanpierce.net
