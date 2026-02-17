@@ -1,5 +1,5 @@
 ---
-description: Delivered at XCon in Bejing in 2011.
+description: Delivered at XCon in Beijing in 2011.
 ---
 
 # Lateral Movement in Linux Environments
