@@ -519,6 +519,34 @@ a {
   object-position: center top;
 }
 
+.contact-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 430px;
+  margin-top: 16px;
+}
+
+.contact-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 11px;
+  border: 2px solid rgba(23, 78, 42, 0.28);
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(255, 252, 239, 0.78);
+  font-size: 18px;
+  font-weight: 750;
+  line-height: 1;
+}
+
+.contact-tag strong {
+  color: var(--forest);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 .intro-card h3 {
   margin: 18px 0 0;
   max-width: 360px;
