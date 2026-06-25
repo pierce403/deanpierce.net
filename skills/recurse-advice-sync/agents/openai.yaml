@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recurse Advice Sync"
+  short_description: "Review recurse.bot advice and adapt it"
+  default_prompt: "Use $recurse-advice-sync to check recurse.bot and decide whether this repo needs updates."

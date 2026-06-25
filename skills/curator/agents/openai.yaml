@@ -1,0 +1,4 @@
+interface:
+  display_name: "Curator"
+  short_description: "Maintain this repo's skill library"
+  default_prompt: "Use $curator to update this repository's SKILLS.md catalog and skill folders."

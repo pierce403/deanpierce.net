@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish Site Change"
+  short_description: "Build, commit, push, and verify Pages deploys"
+  default_prompt: "Use $publish-site-change to validate and publish a finished deanpierce.net edit."

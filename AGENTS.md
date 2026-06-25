@@ -38,6 +38,14 @@ This document exists to brief any automations, agents, or contributors interacti
 - **When deleting files:** Always update `mkdocs.yml` navigation to remove references to deleted files. The `--strict` build mode will catch orphaned references, but only if you test before pushing.
 - **Navigation sync:** The `nav` section in `mkdocs.yml` must exactly match the files in `docs/`. Missing or extra references will cause build failures in CI.
 
+## Repo-Local Skills
+
+- This repo adapts the [recurse.bot](https://recurse.bot/) skill convention: `SKILLS.md` is the compact catalog, and detailed procedures live in `skills/<name>/SKILL.md`.
+- Use `curator` when adding, revising, consolidating, or pruning repo-local skills.
+- Use `site-content-manager` for MkDocs content, navigation, talk/project pages, and static deck bundles.
+- Use `publish-site-change` when finishing a logical edit: build strictly, commit, push, monitor the Pages workflow, verify live URLs when useful, and leave `git status` clean.
+- Use `recurse-advice-sync` when pulling fresh guidance from recurse.bot and deciding whether it belongs in `AGENTS.md`, `SKILLS.md`, or a skill folder.
+
 ## Continuous Documentation
 
 - Whenever you learn something new or non-obvious about this repository (build steps, quirks, credentials, directory structure changes, etc.), append that knowledge here. This document should evolve alongside the project.
@@ -45,4 +53,5 @@ This document exists to brief any automations, agents, or contributors interacti
 
 ## Last updated
 
+- Updated by automation on 2026-06-25. Added repo-local `SKILLS.md` and skill folders after adapting the recurse.bot skill etiquette pattern for this MkDocs site.
 - Updated by automation on 2025-10-24. Added mandatory build testing requirement and navigation sync pitfalls after discovering broken references causing deployment failures.

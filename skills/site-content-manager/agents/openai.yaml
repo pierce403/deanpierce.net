@@ -1,0 +1,4 @@
+interface:
+  display_name: "Site Content Manager"
+  short_description: "Edit MkDocs content and navigation safely"
+  default_prompt: "Use $site-content-manager to add or update a page on deanpierce.net."
