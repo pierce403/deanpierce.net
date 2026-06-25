@@ -10,7 +10,7 @@ This 20-minute talk tells the story of how the Portland Hacker Foundation was se
 
 ## Slides
 
-- [Open the Reveal.js slides](hacker-foundation-hijinks-slides/reveal.html){ target=_blank }
+- [View Slides](hacker-foundation-hijinks-slides/reveal.html){ target=_blank }
 
 ## Resources
 
