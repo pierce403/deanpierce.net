@@ -416,6 +416,35 @@ a {
   align-items: center;
 }
 
+.intro-split {
+  align-items: stretch;
+}
+
+.intro-card {
+  align-self: center;
+  padding: 34px;
+  border: 1px solid rgba(242, 196, 95, 0.46);
+  border-radius: 10px;
+  background:
+    linear-gradient(145deg, rgba(242, 196, 95, 0.14), rgba(84, 224, 210, 0.08)),
+    rgba(255, 255, 255, 0.06);
+  box-shadow: var(--shadow);
+}
+
+.intro-card h3 {
+  margin: 18px 0 0;
+  color: var(--ink);
+  font-size: 40px;
+  line-height: 1.05;
+}
+
+.intro-card p:not(.slide-kicker) {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 24px;
+  line-height: 1.34;
+}
+
 .visual-panel {
   position: relative;
   min-height: 430px;
