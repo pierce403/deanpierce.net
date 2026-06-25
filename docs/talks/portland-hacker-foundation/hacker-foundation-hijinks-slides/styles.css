@@ -10,6 +10,8 @@
   --amber: #a66100;
   --coral: #b64225;
   --green: #3f7517;
+  --forest: #174e2a;
+  --leaf: #54b948;
   --blue: #174ea6;
   --shadow: 0 18px 48px rgba(38, 28, 12, 0.14);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -28,7 +30,7 @@ body {
 body {
   background:
     linear-gradient(135deg, rgba(255, 247, 223, 0.98), rgba(255, 252, 239, 0.97)),
-    radial-gradient(circle at 82% 18%, rgba(0, 124, 116, 0.18), transparent 34%),
+    radial-gradient(circle at 82% 18%, rgba(84, 185, 72, 0.22), transparent 34%),
     var(--bg);
   color: var(--ink);
 }
@@ -239,13 +241,22 @@ a {
   z-index: 20;
   top: 18px;
   right: 18px;
-  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px 7px 8px;
   border-radius: 8px;
   color: var(--ink);
   background: rgba(255, 252, 239, 0.9);
   border: 2px solid rgba(16, 33, 43, 0.22);
   font-size: 16px;
   font-weight: 800;
+}
+
+.deck-link img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .deck-link:hover {
@@ -262,6 +273,24 @@ a {
 
 .reveal .slides section {
   color: var(--ink);
+}
+
+.reveal .slides section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(23, 78, 42, 0.1) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(23, 78, 42, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 84% 22%, rgba(84, 185, 72, 0.18), transparent 30%);
+  background-size: 82px 82px, 82px 82px, auto;
+  opacity: 0.44;
+}
+
+.reveal .slides section > * {
+  position: relative;
+  z-index: 1;
 }
 
 .reveal .slides section {
@@ -282,10 +311,31 @@ a {
 
 .slide-kicker {
   margin: 0;
-  color: var(--teal);
+  color: var(--forest);
   font-size: 15px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.foundation-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding: 8px 14px 8px 10px;
+  color: var(--forest);
+  background: rgba(255, 252, 239, 0.88);
+  border: 2px solid rgba(23, 78, 42, 0.28);
+  border-radius: 12px;
+  font-size: 21px;
+  font-weight: 850;
+  box-shadow: var(--shadow);
+}
+
+.foundation-mark img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .slide-title {
@@ -447,14 +497,25 @@ a {
 }
 
 .intro-card {
+  position: relative;
   align-self: stretch;
   padding: 34px;
-  border: 3px solid rgba(166, 97, 0, 0.4);
+  border: 3px solid rgba(23, 78, 42, 0.32);
   border-radius: 10px;
   background:
-    linear-gradient(145deg, rgba(255, 204, 91, 0.28), rgba(0, 124, 116, 0.11)),
+    linear-gradient(145deg, rgba(84, 185, 72, 0.22), rgba(255, 204, 91, 0.2)),
     rgba(255, 255, 255, 0.82);
   box-shadow: var(--shadow);
+}
+
+.card-logo {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(23, 78, 42, 0.18));
 }
 
 .intro-card h3 {
@@ -474,11 +535,11 @@ a {
 .visual-panel {
   position: relative;
   min-height: 430px;
-  border: 1px solid var(--line);
+  border: 2px solid rgba(23, 78, 42, 0.24);
   border-radius: 8px;
   overflow: hidden;
   background:
-    linear-gradient(145deg, rgba(84, 224, 210, 0.12), rgba(255, 123, 101, 0.08)),
+    linear-gradient(145deg, rgba(84, 185, 72, 0.2), rgba(255, 204, 91, 0.12)),
     rgba(255, 255, 255, 0.05);
 }
 
@@ -526,8 +587,8 @@ a {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: var(--teal);
-  box-shadow: 0 0 18px rgba(84, 224, 210, 0.8);
+  background: var(--leaf);
+  box-shadow: 0 0 18px rgba(84, 185, 72, 0.52);
 }
 
 .bet {
@@ -567,7 +628,7 @@ a {
 }
 
 .arrow-chain i {
-  color: var(--teal);
+  color: var(--forest);
   font-style: normal;
   font-size: 28px;
 }
@@ -580,8 +641,8 @@ a {
 }
 
 .impact.key {
-  background: rgba(242, 196, 95, 0.16);
-  border-color: rgba(242, 196, 95, 0.48);
+  background: rgba(84, 185, 72, 0.18);
+  border-color: rgba(23, 78, 42, 0.38);
 }
 
 .stat-grid {
@@ -589,6 +650,16 @@ a {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   max-width: 940px;
+}
+
+.public-logo {
+  position: absolute;
+  right: 92px;
+  top: 104px;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 20px rgba(23, 78, 42, 0.18));
 }
 
 .stat {
@@ -601,7 +672,7 @@ a {
 .stat b {
   display: block;
   font-size: 42px;
-  color: var(--green);
+  color: var(--forest);
 }
 
 .stat span {
@@ -614,8 +685,17 @@ a {
 
 .closing {
   background:
-    linear-gradient(90deg, rgba(255, 247, 223, 0.99), rgba(255, 247, 223, 0.95) 58%, rgba(255, 247, 223, 0.76)),
-    url("assets/circuit-map.svg") center / cover no-repeat;
+    linear-gradient(90deg, rgba(255, 247, 223, 0.99), rgba(255, 247, 223, 0.95) 54%, rgba(255, 247, 223, 0.68)),
+    url("assets/tree-circuit-board.svg") center / cover no-repeat;
+}
+
+.quote-logo {
+  display: block;
+  width: 86px;
+  height: 86px;
+  margin: 0 0 18px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 20px rgba(23, 78, 42, 0.18));
 }
 
 .source {
