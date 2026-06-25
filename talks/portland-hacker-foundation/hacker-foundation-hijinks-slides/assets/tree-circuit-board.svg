@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tree circuit board motif</title>
+  <desc id="desc">A bright green circuit-board pattern that grows into a stylized evergreen tree.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8df"/>
+      <stop offset="1" stop-color="#eef7d8"/>
+    </linearGradient>
+    <linearGradient id="trace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a8f42"/>
+      <stop offset=".56" stop-color="#54b948"/>
+      <stop offset="1" stop-color="#0b6f44"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 .18 0 0 0 0 .72 0 0 0 0 .22 0 0 0 .45 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#paper)"/>
+  <g opacity=".16" stroke="#174e2a" stroke-width="3" fill="none">
+    <path d="M70 122H300V220H470M112 770H338V668H562M522 92V242H714V338M1040 110V272H1288V404H1510M990 794V654H1172V546M1338 716H1492V586M736 744V620H920V498M212 408H388V502H622"/>
+    <path d="M101 305H250V376H392M1222 214H1394V300H1518M580 760H702V824H860"/>
+  </g>
+  <g filter="url(#glow)" fill="none" stroke="url(#trace)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 680H330Q370 680 398 640L512 482Q540 444 590 444H720Q758 444 786 408L916 238Q948 198 1000 198H1118Q1162 198 1190 232L1320 392Q1352 432 1402 432H1510"/>
+    <path d="M786 408V244H944"/>
+    <path d="M916 238V120H1068"/>
+    <path d="M1190 232V360H1300"/>
+    <path d="M512 482V610H680"/>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M838 178 706 364h78L640 548h138l-92 122h346l-92-122h138L934 364h78z" fill="#2f8f35" opacity=".94"/>
+    <path d="M838 222 748 348h76L704 504h126l-70 92h208l-70-92h126L904 348h76z" fill="#76c85a" opacity=".86"/>
+    <rect x="815" y="666" width="90" height="96" rx="12" fill="#85512c" opacity=".92"/>
+  </g>
+  <g fill="#174e2a">
+    <circle cx="150" cy="680" r="18"/><circle cx="512" cy="482" r="20"/><circle cx="916" cy="238" r="22"/><circle cx="1190" cy="232" r="18"/><circle cx="1510" cy="432" r="18"/>
+    <circle cx="786" cy="408" r="16"/><circle cx="680" cy="610" r="16"/><circle cx="1068" cy="120" r="16"/><circle cx="1300" cy="360" r="16"/>
+  </g>
+  <g opacity=".58" fill="#174e2a" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">
+    <text x="110" y="742">ideas</text>
+    <text x="460" y="555">seed</text>
+    <text x="850" y="310">support</text>
+    <text x="1135" y="302">impact</text>
+    <text x="1385" y="500">community</text>
+  </g>
+</svg>
