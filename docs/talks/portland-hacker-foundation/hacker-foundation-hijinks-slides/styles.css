@@ -259,8 +259,7 @@ a {
   text-align: left;
 }
 
-.reveal .slides section,
-.impress-deck .step {
+.reveal .slides section {
   color: var(--ink);
 }
 
@@ -575,77 +574,6 @@ a {
 
 .accent-coral {
   color: var(--coral);
-}
-
-.impress-deck {
-  overflow: hidden;
-}
-
-.impress-deck::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background:
-    linear-gradient(135deg, rgba(16, 23, 29, 0.98), rgba(8, 11, 15, 0.98)),
-    url("assets/circuit-map.svg") center / cover no-repeat;
-}
-
-.impress-deck::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background: rgba(8, 11, 15, 0.64);
-}
-
-.impress-deck .step {
-  width: 1120px;
-  min-height: 640px;
-  padding: 58px;
-  border: 1px solid rgba(244, 241, 232, 0.16);
-  border-radius: 8px;
-  background: rgba(13, 20, 25, 0.88);
-  box-shadow: var(--shadow);
-  opacity: 0.28;
-  transition: opacity .4s, filter .4s;
-}
-
-.impress-deck .step.active {
-  opacity: 1;
-  filter: none;
-}
-
-.impress-deck .overview {
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-}
-
-.impress-deck .overview .slide-title {
-  max-width: 860px;
-  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
-}
-
-.impress-deck .hero-step {
-  background:
-    linear-gradient(90deg, rgba(9, 13, 17, 0.95), rgba(9, 13, 17, 0.62)),
-    url("assets/circuit-map.svg") center / cover no-repeat;
-}
-
-.impress-deck .closing-step {
-  background:
-    linear-gradient(90deg, rgba(9, 13, 17, 0.95), rgba(9, 13, 17, 0.46)),
-    url("assets/circuit-map.svg") center / cover no-repeat;
-}
-
-.impress-hint {
-  position: fixed;
-  left: 18px;
-  bottom: 18px;
-  z-index: 20;
-  color: rgba(244, 241, 232, 0.6);
-  font-size: 13px;
 }
 
 @media (max-width: 760px) {

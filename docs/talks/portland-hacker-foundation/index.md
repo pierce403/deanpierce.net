@@ -20,7 +20,7 @@ PDXHF thrives within Portland's vibrant hacker scene, centered around PDX Hacker
 
 ## Latest Talk
 
-- [Hacker Foundation Hijinks](../toorcamp-2026/hacker-foundation-hijinks.md) - ToorCamp 2026 talk and static deck prototype.
+- [Hacker Foundation Hijinks](hacker-foundation-hijinks.md) - ToorCamp 2026 talk and Reveal.js slides.
 
 ---
 
