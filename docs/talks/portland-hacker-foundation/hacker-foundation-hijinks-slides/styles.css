@@ -307,6 +307,14 @@ a {
   line-height: 1.32;
 }
 
+.slide-author {
+  margin: 18px 0 0;
+  color: var(--amber);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
 .quote {
   max-width: 1040px;
   margin: 0;
