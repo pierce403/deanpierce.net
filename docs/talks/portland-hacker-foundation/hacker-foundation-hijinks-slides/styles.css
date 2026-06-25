@@ -420,6 +420,17 @@ a {
   align-items: stretch;
 }
 
+.intro-avatar {
+  display: block;
+  width: 132px;
+  height: 132px;
+  margin: 0 0 26px;
+  border-radius: 50%;
+  border: 3px solid var(--teal);
+  object-fit: cover;
+  box-shadow: 0 0 34px rgba(84, 224, 210, 0.36);
+}
+
 .intro-card {
   align-self: center;
   padding: 34px;
