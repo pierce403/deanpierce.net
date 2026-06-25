@@ -18,6 +18,10 @@ PDXHF thrives within Portland's vibrant hacker scene, centered around PDX Hacker
 - [Apply for a Grant](https://docs.google.com/forms/d/e/1FAIpQLSfaRK_Q_D808wyhj5cFVxF1wO9nUbItCgGJQuCJyHfUzVUVjw/viewform){ target=_blank }
 - [Become a Sponsor](https://www.paypal.com/donate/?hosted_button_id=GP42Y6XNS8ZTA){ target=_blank }
 
+## Latest Talk
+
+- [Hacker Foundation Hijinks](../toorcamp-2026/hacker-foundation-hijinks.md) - ToorCamp 2026 talk and static deck prototype.
+
 ---
 
 Use the links in the navigation to explore individual talks chronicling the foundation's story.

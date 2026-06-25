@@ -7,6 +7,9 @@ repo_name: pierce403/deanpierce.net
 nav:
   - Home: index.md
   - Talks:
+      - ToorCamp 2026:
+          - Hacker Foundation Hijinks: talks/toorcamp-2026/hacker-foundation-hijinks.md
+          - Working the Slop Mines: talks/toorcamp-2026/working-the-slop-mines.md
       - Portland Hacker Foundation:
           - Overview: talks/portland-hacker-foundation/index.md
           - BSides Portland 2024: talks/portland-hacker-foundation/bsides-portland-2024.md
