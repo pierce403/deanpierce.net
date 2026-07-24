@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Working the Slop Mines - ToorCamp 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="impress-not-supported mood-boardroom">
+  <div class="fallback-message">
+    <p>This deck needs impress.js. If the CDN is unavailable, serve the folder locally with network access or vendor impress.js and update the script tag.</p>
+  </div>
+
+  <header class="deck-hud" aria-hidden="true">
+    <div class="hud-label">Working the Slop Mines</div>
+    <div class="sanity-meter">
+      <span>Sanity</span>
+      <div class="sanity-track"><b id="sanity-fill"></b></div>
+      <span id="sanity-value">100%</span>
+    </div>
+    <div id="slide-counter">01 / 29</div>
+  </header>
+
+  <div id="impress" data-transition-duration="900">
+    <!-- CUSTOMIZE: Add personal intro, ToorCamp greeting, and why this talk is not a normal AI governance briefing. -->
+    <section id="slide-01" class="step slide corporate image-hero" data-mood="boardroom" data-sanity="100" data-x="0" data-y="0" data-z="0" data-scale="1">
+      <img src="assets/generated/corposlop-boardroom.png" alt="Corporate boardroom invaded by software slop machinery">
+      <div class="hero-copy">
+        <p class="eyebrow">Executive Alignment Briefing / ToorCamp 2026</p>
+        <h1>Working the Slop Mines</h1>
+        <p class="author-line">Dean Pierce</p>
+        <p class="subtitle">CorpoSlop, autoresearch, bug markets, and the future role of humanity</p>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: corposlop-boardroom.png. Start unnervingly corporate. Let the audience notice the machinery before naming it.
+      </aside>
+    </section>
+
+    <section id="slide-02" class="step slide corporate image-hero dark-overlay" data-mood="boardroom" data-sanity="96" data-x="0" data-y="850" data-z="-80" data-scale="1">
+      <img src="assets/generated/corposlop-firehose.png" alt="Corporate workers firehosing streams of digital slop at each other in a boardroom">
+      <div class="hero-copy dark">
+        <p class="eyebrow">Operating Context</p>
+        <h2>The CorpoSlop era</h2>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: corposlop-firehose.png. Source: SIMPLE.md. Customize with your definition of CorpoSlop: corporate workflows saturated by generated artifacts and agent actions. The visual point is that everyone can spray code, tickets, reports, tests, runbooks, and strategy faster than the organization can absorb them.
+      </aside>
+    </section>
+
+    <section id="slide-03" class="step slide corporate image-hero dark-overlay" data-mood="boardroom" data-sanity="92" data-x="0" data-y="1700" data-z="-160" data-scale="1">
+      <img src="assets/generated/quality-machines.png" alt="Office workers struggling to use whimsical broken workplace machines">
+      <div class="hero-copy dark">
+        <p class="eyebrow">Risk Committee Finding</p>
+        <h2>Quality is still important.</h2>
+        <p>fast broken output is still broken</p>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: quality-machines.png. This slide turns the user's "better or worse?" into the control-system question for the rest of the talk: fast output is not valuable if the workplace cannot use it. The rest of the deck is about gates that turn speed into useful throughput instead of broken machinery.
+      </aside>
+    </section>
+
+    <section id="slide-04" class="step slide compliance media-slide" data-mood="compliance" data-sanity="88" data-x="-160" data-y="2550" data-z="-260" data-rotate-z="-2" data-scale="1">
+      <div>
+        <p class="eyebrow">Step 1</p>
+        <h2>Branch protection</h2>
+        <ul class="big-list">
+          <li>protected branches</li>
+          <li>required checks</li>
+          <li>review gates</li>
+          <li>merge policy</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/screenshots/github-protected-branches.png" alt="GitHub protected branches documentation screenshot">
+        <figcaption>GitHub Docs: protected branches</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+      </aside>
+    </section>
+
+    <section id="slide-05" class="step slide compliance" data-mood="compliance" data-sanity="86" data-x="80" data-y="3100" data-z="-320" data-rotate-z="0" data-scale="1">
+      <p class="eyebrow">Step 2</p>
+      <h2>CODEOWNERS</h2>
+      <p class="source-link"><a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners">GitHub Docs: code owners</a></p>
+      <pre class="corp-chart">
+# .github/CODEOWNERS
+*                    @platform
+/infra/              @sre
+/payments/           @security
+/.github/workflows/  @release
+      </pre>
+      <div class="rail-list">
+        <span>path ownership</span>
+        <span>required review</span>
+        <span>human routing</span>
+        <span>blast-radius memory</span>
+      </div>
+      <aside class="speaker-notes">
+        Source: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners. GitHub uses CODEOWNERS files, not codeowners.md. Code owners are automatically requested for review when a pull request changes files they own, and branch protection can require approval from code owners.
+      </aside>
+    </section>
+
+    <section id="slide-06" class="step slide compliance media-slide" data-mood="compliance" data-sanity="84" data-x="200" data-y="3400" data-z="-380" data-rotate-z="2" data-scale="1">
+      <div>
+        <p class="eyebrow">Step 3</p>
+        <h2>Actions everywhere</h2>
+        <div class="rail-list">
+          <span>PR opens</span>
+          <span>tests run</span>
+          <span>status checks</span>
+          <span>merge blocked</span>
+          <span>red means stop</span>
+          <span>green means review</span>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/screenshots/github-actions.png" alt="GitHub Actions documentation screenshot">
+        <figcaption>GitHub Docs: Actions</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://docs.github.com/en/actions. Use this to frame GitHub Actions as PR test machinery, not generic automation: branch protection can require status checks, so failing tests block merges before bad code lands.
+      </aside>
+    </section>
+
+    <section id="slide-07" class="step slide compliance image-hero dark-overlay" data-mood="compliance" data-sanity="80" data-x="620" data-y="4250" data-z="-520" data-rotate-z="4" data-scale="1">
+      <img src="assets/generated/robot-evaluation-gates.png" alt="Robots evaluating robot contributions and routing software slop through quality gates">
+      <div class="hero-copy dark">
+        <p class="eyebrow">Unexpected Revival</p>
+        <h2>Test driven development is back.</h2>
+        <p>robots evaluating robots</p>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: robot-evaluation-gates.png. Make the point: tests are the contract that turns vague intent into robot-checkable work. Robots can generate patches, but other robots and CI gates measure whether those patches move the project forward or get routed into the reject stream.
+      </aside>
+    </section>
+
+    <section id="slide-08" class="step slide fracture" data-mood="fracture" data-sanity="76" data-x="1100" data-y="5050" data-z="-780" data-rotate-z="8" data-scale="1">
+      <p class="eyebrow">Work Tracking Mutates</p>
+      <h2>Ticketing systems orchestrate agents now.</h2>
+      <ul class="big-list">
+        <li>Jira MCP</li>
+        <li>backlog state</li>
+        <li>ownership</li>
+        <li>acceptance criteria</li>
+        <li>evidence</li>
+      </ul>
+      <aside class="speaker-notes">
+        CUSTOMIZE: Add your concrete Jira MCP story. Generic source concept: Model Context Protocol makes external tools/data available to models. The point is bigger than a model reading a ticket: ticketing systems become orchestration layers because they carry state, ownership, acceptance criteria, and evidence across agent work.
+      </aside>
+    </section>
+
+    <section id="slide-09" class="step slide fracture" data-mood="fracture" data-sanity="74" data-x="1450" data-y="5400" data-z="-900" data-rotate-z="10" data-scale="1.03">
+      <p class="eyebrow">Storage Boundary</p>
+      <h2>Focus on robust storage.</h2>
+      <p class="callout">Merkle trees are magic</p>
+      <ul class="big-list">
+        <li>log everything</li>
+        <li>append-only mindset</li>
+        <li>no individual should be able to trash the environment</li>
+      </ul>
+      <aside class="speaker-notes">
+        Treat important state as append-only where possible: log everything, make tampering visible, use Merkle-ish structures for provenance and verification, and design permissions so no individual can trash the environment.
+      </aside>
+    </section>
+
+    <section id="slide-10" class="step slide fracture" data-mood="fracture" data-sanity="72" data-x="1800" data-y="5700" data-z="-1020" data-rotate-z="13" data-scale="1.05">
+      <p class="eyebrow">GitOps Premise</p>
+      <h2>Codify everything.</h2>
+      <p class="callout">bad code cannot land quietly</p>
+      <div class="rail-list">
+        <span>process</span>
+        <span>ownership</span>
+        <span>tests</span>
+        <span>deploys</span>
+        <span>evidence</span>
+        <span>review boundaries</span>
+      </div>
+      <aside class="speaker-notes">
+        The user's line: "If the repo is well formed, only productive PRs are able to get merged." Push the broader point here: robots look good at code when the organization has encoded its process, ownership, tests, deploy paths, evidence expectations, and review boundaries. The job is not just writing code; it is making everything important machine-addressable.
+      </aside>
+    </section>
+
+    <section id="slide-11" class="step slide fracture" data-mood="fracture" data-sanity="70" data-x="2320" data-y="5700" data-z="-1100" data-rotate-z="8" data-scale="1.05">
+      <p class="eyebrow">Infrastructure Mutates</p>
+      <h2>Infra is code now.</h2>
+      <p class="source-link"><a href="https://www.cncf.io/">cncf.io</a></p>
+      <pre class="pipeline">
+git -> controller -> cluster
+drift -> reconcile
+      </pre>
+      <div class="rail-list">
+        <span>Kubernetes</span>
+        <span>declarative APIs</span>
+        <span>immutable infra</span>
+        <span>Cloud Native Computing Foundation / 2015</span>
+      </div>
+      <aside class="speaker-notes">
+        Source: https://www.cncf.io/about/who-we-are/ says CNCF hosts critical components of global technology infrastructure and defines cloud native around containers, service meshes, microservices, immutable infrastructure, and declarative APIs. Source: https://www.cncf.io/announcements/2015/06/21/new-cloud-native-computing-foundation-to-drive-alignment-among-container-technologies/ has a July 21, 2015 San Francisco dateline and says the Linux Foundation announced CNCF, with Google contributing Kubernetes as seed technology. I did not find official support for "founded in Portland"; mention Portland only if you have a better local source.
+      </aside>
+    </section>
+
+    <section id="slide-12" class="step slide uncanny media-slide" data-mood="uncanny" data-sanity="68" data-x="2850" data-y="5700" data-z="-1180" data-rotate-z="0" data-scale="1">
+      <div>
+        <p class="eyebrow">Repository Etiquette</p>
+        <h2>Git repos are people too.</h2>
+        <p class="source-link"><a href="https://recurse.bot">https://recurse.bot</a></p>
+        <ul class="big-list">
+          <li>memory</li>
+          <li>manners</li>
+          <li>skills</li>
+          <li>history</li>
+        </ul>
+      </div>
+      <figure>
+        <a href="https://recurse.bot">
+          <img src="assets/screenshots/recurse-bot.png" alt="Recurse.bot Sparkle etiquette guide screenshot">
+        </a>
+        <figcaption>recurse.bot</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://recurse.bot. Page describes Sparkle's Agent Etiquette Guide, repository etiquette, AGENTS.md, memory etiquette, and the idea that important work should have git history.
+      </aside>
+    </section>
+
+    <section id="slide-13" class="step slide uncanny media-slide fit-shot" data-mood="uncanny" data-sanity="64" data-x="3900" data-y="5700" data-z="-1320" data-rotate-z="-5" data-scale="1">
+      <div>
+        <p class="eyebrow">Project Base Layer</p>
+        <h2>ARCHITECTURE.md</h2>
+        <p class="source-link"><a href="https://architecture.md">architecture.md</a></p>
+        <ul class="big-list">
+          <li>structure</li>
+          <li>diagrams</li>
+          <li>components</li>
+          <li>integrations</li>
+          <li>maturity</li>
+        </ul>
+      </div>
+      <figure>
+        <a href="https://architecture.md">
+          <img src="assets/screenshots/architecture-md.png" alt="ARCHITECTURE.md template website screenshot">
+        </a>
+        <figcaption>architecture.md</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://architecture.md. Page describes a living template for rapid codebase comprehension that agents can fill in for a repo and update as the codebase evolves.
+      </aside>
+    </section>
+
+    <section id="slide-14" class="step slide warning image-hero dark-overlay" data-mood="warning" data-sanity="60" data-x="4950" data-y="5700" data-z="-1460" data-rotate-z="-8" data-scale="1">
+      <img src="assets/generated/bug-bounty-roach-city.png" alt="Black and red cyberpunk city overwhelmed by swarms of small cockroaches">
+      <div class="hero-copy dark">
+        <p class="eyebrow">Incentive Failure</p>
+        <h2>Bug bounty starts to bend.</h2>
+        <ul class="big-list">
+          <li>cheap cognition</li>
+          <li>cheap reports</li>
+          <li>duplicate floods</li>
+          <li>triage overload</li>
+          <li>bounty shutdowns</li>
+        </ul>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: bug-bounty-roach-city.png. Source example: curl docs now say there is no curl bug bounty and cite overload/abuse incentives. URL: https://raw.githubusercontent.com/curl/curl/master/docs/BUG-BOUNTY.md
+      </aside>
+    </section>
+
+    <section id="slide-15" class="step slide warning media-slide" data-mood="warning" data-sanity="56" data-x="6000" data-y="5700" data-z="-1600" data-rotate-z="-10" data-scale="1">
+      <div>
+        <p class="eyebrow">Market Response</p>
+        <h2>Cheap bugs, expensive triage</h2>
+        <p class="source-link"><a href="https://cheapbugs.net">cheapbugs.net</a></p>
+        <ul class="big-list">
+          <li>public reports</li>
+          <li>get paid</li>
+          <li>crypto-native incentives</li>
+          <li>unkillable infrastructure</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/screenshots/cheapbugs.png" alt="CheapBugs website screenshot">
+        <figcaption>cheapbugs.net</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://cheapbugs.net. Page metadata: Base-native bug report board where researchers report bugs, get paid, and publish public-safe reports.
+      </aside>
+    </section>
+
+    <section id="slide-16" class="step slide warning" data-mood="warning" data-sanity="52" data-x="7050" data-y="5700" data-z="-1740" data-rotate-z="-12" data-scale="1">
+      <p class="eyebrow">Private Proof / Public Signal</p>
+      <h2>Zero-knowledge exploitability proofs</h2>
+      <pre class="terminal">
+private exploit witness
+  -> public vulnerable target
+    -> ZK proof of impact
+      -> auto triage score
+        -> bounty escrow / disclosure path
+      </pre>
+      <p class="callout">prove impact, reveal later</p>
+      <aside class="speaker-notes">
+        zkbounty.org did not resolve here on 2026-06-27, so treat this as a concept hook. The point: automated triage needs to distinguish real exploitability from spam without forcing researchers to publish the full exploit immediately. A zero-knowledge proof could attest that a private witness triggers a public vulnerable condition, enabling scoring, escrow, duplicate detection, and coordinated disclosure before revealing the exploit details.
+      </aside>
+    </section>
+
+    <section id="slide-17" class="step slide industrial image-hero" data-mood="industrial" data-sanity="48" data-x="8100" data-y="5700" data-z="-1880" data-rotate-z="-8" data-scale="1">
+      <img src="assets/generated/autoresearch-foundry.png" alt="Underground autoresearch foundry with agents processing code and tests">
+      <div class="hero-copy dark">
+        <p class="eyebrow">Mine Elevator</p>
+        <h2>Autoresearch</h2>
+        <div class="hero-rail">
+          <span>benchmarks</span>
+          <span>work orders</span>
+          <span>score deltas</span>
+        </div>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: autoresearch-foundry.png. Frame this as Karpathy-style autoresearch without overclaiming a specific citation.
+      </aside>
+    </section>
+
+    <section id="slide-18" class="step slide industrial media-slide" data-mood="industrial" data-sanity="44" data-x="9150" data-y="5700" data-z="-2020" data-rotate-z="-3" data-scale="1">
+      <div>
+        <p class="eyebrow">Benchmark Arena</p>
+        <h2>ECDSA.fail</h2>
+        <p class="source-link"><a href="https://www.ecdsa.fail/">ecdsa.fail</a></p>
+        <div class="rail-list">
+          <span>beat Google?</span>
+          <span>ECC addition</span>
+          <span>qubits x Toffoli</span>
+          <span>submit circuit</span>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/screenshots/ecdsa-fail.png" alt="ECDSA.fail benchmark screenshot">
+        <figcaption>ecdsa.fail</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://www.ecdsa.fail/. Page frames the challenge as "Will you beat Google?", measures quantum ECC addition circuits by qubit-Toffoli product, and links the loop to local circuit improvements and submissions.
+      </aside>
+    </section>
+
+    <section id="slide-19" class="step slide industrial" data-mood="industrial" data-sanity="40" data-x="10150" data-y="5350" data-z="-2180" data-rotate-z="4" data-scale="1.05">
+      <p class="eyebrow">The Saga</p>
+      <h2>The ECDSA.fail saga</h2>
+      <div class="two-col">
+        <ul>
+          <li>unpublished result</li>
+          <li>ECC point addition</li>
+          <li>Shor bottleneck</li>
+          <li>Bitcoin keys</li>
+        </ul>
+        <ul>
+          <li>Google baseline</li>
+          <li>Litinski baseline</li>
+          <li>agent circuits</li>
+          <li>frontier score</li>
+        </ul>
+      </div>
+      <aside class="speaker-notes">
+        Source: https://www.ecdsa.fail/. The site's "Will you beat Google?" modal says Google showed elliptic-curve cryptography could be broken with fewer resources than expected, published a cryptographic zero-knowledge proof without publishing the specific algorithm, and that the target circuit is elliptic curve point addition for secp256k1. Keep this mostly as a wing-it story; visible text is intentionally sparse.
+      </aside>
+    </section>
+
+    <section id="slide-20" class="step slide industrial media-slide" data-mood="industrial" data-sanity="36" data-x="10900" data-y="4700" data-z="-2420" data-rotate-z="16" data-scale="1.12">
+      <div>
+        <p class="eyebrow">Corpus Grinding</p>
+        <h2>rmpeg</h2>
+        <p class="source-link"><a href="https://rmpeg.org">rmpeg.org</a></p>
+        <div class="rail-list">
+          <span>2,511 samples</span>
+          <span>status rows</span>
+          <span>repro progress</span>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/screenshots/rmpeg.png" alt="rmpeg website screenshot with upstream sample execution progress">
+        <figcaption>rmpeg.org</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://rmpeg.org. Page metadata and screenshot showed 2511/2511 synced upstream sample files with clean execution rows.
+      </aside>
+    </section>
+
+    <section id="slide-21" class="step slide uncanny" data-mood="uncanny" data-sanity="33" data-x="11300" data-y="3800" data-z="-2680" data-rotate-z="24" data-scale="1.16">
+      <p class="eyebrow">The OS Joins In</p>
+      <h2>ThermiteOS</h2>
+      <p class="source-link"><a href="https://thermiteos.org">thermiteos.org</a></p>
+      <pre class="terminal">
+Redox microkernel
+  + autoresearch daemon
+  + Magnesium browser
+  + package rebuild loops
+  + local repair attempts
+  + test suites as survival pressure
+      </pre>
+      <aside class="speaker-notes">
+        Source: https://thermiteos.org. Page describes a Redox-based OS distro with autonomous agentic tooling and self-correcting research loops, plus a browser called Magnesium. Headless screenshot captured blank.
+      </aside>
+    </section>
+
+    <section id="slide-22" class="step slide uncanny media-slide" data-mood="uncanny" data-sanity="30" data-x="11350" data-y="3100" data-z="-2840" data-rotate-z="31" data-scale="1.18">
+      <div>
+        <p class="eyebrow">Local Safety Rail</p>
+        <h2>Packy</h2>
+        <p class="source-link"><a href="https://packy.bot">packy.bot</a></p>
+        <ul class="big-list">
+          <li>install commands</li>
+          <li>local inspection</li>
+          <li>risk prompts</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="assets/screenshots/packy.png" alt="Packy website screenshot">
+        <figcaption>packy.bot</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://packy.bot. Page describes Packy as a planned local-first desktop AI friend for safer software installs that notices risky install activity before approval.
+      </aside>
+    </section>
+
+    <section id="slide-23" class="step slide uncanny image-hero" data-mood="uncanny" data-sanity="22" data-x="11250" data-y="2050" data-z="-3060" data-rotate-z="39" data-scale="1.18">
+      <img src="assets/generated/bug-bounty-market.png" alt="Cyberpunk bug bounty marketplace with agents and report piles">
+      <div class="hero-copy dark">
+        <p class="eyebrow">Economic Loop</p>
+        <h2>No employees, just incentives.</h2>
+        <p>benefit / money / reputation / leverage</p>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: bug-bounty-market.png. This directly reflects the SIMPLE.md line about incentives and inference quotas.
+      </aside>
+    </section>
+
+    <section id="slide-24" class="step slide hopeful" data-mood="hopeful" data-sanity="19" data-x="10850" data-y="1650" data-z="-3240" data-rotate-z="46" data-rotate-y="8" data-scale="1.25">
+      <p class="eyebrow">Human Role / Version One</p>
+      <h2>Humans define quality of life.</h2>
+      <ul class="big-list">
+        <li>create</li>
+        <li>build</li>
+        <li>educate</li>
+        <li>definitions drive code</li>
+        <li>code defines reality</li>
+      </ul>
+      <aside class="speaker-notes">
+        The hopeful turn starts here: humans are not obsolete, but their highest-leverage work moves upstream. They define quality of life, teach, build, and encode definitions. Those definitions drive code, and increasingly the code defines lived reality.
+      </aside>
+    </section>
+
+    <section id="slide-25" class="step slide eldritch image-hero dark-overlay" data-mood="eldritch" data-sanity="15" data-x="9800" data-y="1050" data-z="-3500" data-rotate-z="62" data-rotate-y="14" data-scale="1.24">
+      <img src="assets/generated/world-is-code-workflow.png" alt="Surreal industrial workflow loop connecting intent, simulation, robot action, measurement, proofs, patches, and telemetry">
+      <div class="hero-copy dark">
+        <p class="eyebrow">Singularity Era</p>
+        <h2>The world is code.</h2>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: world-is-code-workflow.png. Source hook: SIMPLE.md says "mkrbox.org the world is code" and mentions Omniverse digital twins. Read the loop as intent into simulator, simulator into robot action, robot action into measurement, and measurement back through proofs, patches, telemetry, and markets.
+      </aside>
+    </section>
+
+    <section id="slide-26" class="step slide eldritch media-slide" data-mood="eldritch" data-sanity="11" data-x="8300" data-y="900" data-z="-3780" data-rotate-z="84" data-rotate-y="21" data-scale="1.35">
+      <div>
+        <p class="eyebrow">Physical Loop</p>
+        <h2>MKRBOX</h2>
+        <p class="source-link"><a href="https://mkrbox.org">mkrbox.org</a></p>
+        <div class="rail-list mkrbox-flow">
+          <span>modular workcell</span>
+          <span>operator requests</span>
+          <span>sim first</span>
+          <span>fabrication</span>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/screenshots/mkrbox.png" alt="MKRBOX website screenshot">
+        <figcaption>mkrbox.org</figcaption>
+      </figure>
+      <aside class="speaker-notes">
+        Source: https://mkrbox.org. Page describes a 1 m2 footprint workcell, operator requests, and a sim-first pipeline.
+      </aside>
+    </section>
+
+    <section id="slide-27" class="step slide eldritch" data-mood="eldritch" data-sanity="7" data-x="6600" data-y="1800" data-z="-4000" data-rotate-z="103" data-rotate-y="28" data-scale="1.38">
+      <p class="eyebrow">Industrial Substrate</p>
+      <h2>Digital twins eat the factory.</h2>
+      <ul class="big-list">
+        <li>NVIDIA Omniverse</li>
+        <li>simulation CI</li>
+        <li>robot rehearsal</li>
+        <li>factory test envs</li>
+        <li>everything is merkle trees</li>
+      </ul>
+      <aside class="speaker-notes">
+        Source: NVIDIA Omniverse page describes building industrial digital twins and robotics simulation applications. URL: https://www.nvidia.com/en-us/omniverse/
+      </aside>
+    </section>
+
+    <section id="slide-28" class="step slide eldritch finale image-hero" data-mood="eldritch" data-sanity="3" data-x="3400" data-y="4100" data-z="-4900" data-rotate-z="171" data-rotate-y="39" data-scale="1.7">
+      <img src="assets/generated/eldritch-ecosystem.png" alt="Tentacled global software ecosystem fused with data centers and robot factories">
+      <div class="hero-copy dark">
+        <p class="eyebrow">Future Global Software Ecosystem</p>
+        <h2>The ecosystem wakes up.</h2>
+        <p>prompts / proofs / repos / tentacles</p>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: eldritch-ecosystem.png. This is the deranged future vision slide. Add your strongest prediction here.
+      </aside>
+    </section>
+
+    <section id="slide-29" class="step slide exit image-hero final-fine" data-mood="exit" data-sanity="1" data-x="1850" data-y="5650" data-z="-5400" data-rotate-z="190" data-rotate-y="0" data-scale="1.2">
+      <img src="assets/generated/this-is-fine-cyborg-basilisk.png" alt="Cartoon cyborg kid with a robotic octopus on their head hugging a cute cybernetic basilisk">
+      <div class="hero-copy dark">
+        <h2>THIS IS FINE</h2>
+      </div>
+      <aside class="speaker-notes">
+        Generated image: this-is-fine-cyborg-basilisk.png. Closing beat: the future is visibly impossible, adorable, and still our responsibility.
+      </aside>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/impress.js@1.1.0/js/impress.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

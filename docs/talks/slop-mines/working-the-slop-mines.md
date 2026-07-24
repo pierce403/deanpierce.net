@@ -15,6 +15,10 @@ This 50-minute talk looks at what happens when difficult technical work is incre
 - Exploring autonomous incentive structures, zero-knowledge execution proofs for bug triage and feature development, and new human-computer interaction models.
 - Thinking about how these tools can empower individuals and the communities they care about.
 
+## Slides
+
+- [View Slides](working-the-slop-mines-slides/index.html){ target=_blank }
+
 ## Resources
 
 - [ToorCamp schedule entry](https://talks.toorcon.net/toorcamp-2026/talk/VK9RN3/){ target=_blank }
