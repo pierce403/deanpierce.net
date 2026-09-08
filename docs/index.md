@@ -8,6 +8,8 @@ Hello, my name is Dean Pierce. I'm a security researcher from Portland, Oregon w
 
 How does this crime happen? How will crime happen in the future? What can we do now to ensure that people are empowered by these emerging technologies without the mental burden of lingering fear? These are the key issues I seek to address in all the work I do.
 
+[View my resume](resume.html)
+
 ## Contact
 
 Please do hit me up on any of the socials if you have any questions/feedback about anything here.

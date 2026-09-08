@@ -6,6 +6,7 @@ repo_name: pierce403/deanpierce.net
 
 nav:
   - Home: index.md
+  - Resume: resume.html
   - Talks:
       - Portland Hacker Foundation:
           - Overview: talks/portland-hacker-foundation/index.md
