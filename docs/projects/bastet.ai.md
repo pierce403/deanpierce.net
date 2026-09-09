@@ -6,7 +6,7 @@ description: Summoning the Egyptian goddess of protection to save the Internet
 
 Infosec AI DAO. Summoning the goddess Bastet to protect all the cyber assets.
 
-Modern tools for funding for infosec research.
+Modern tools for funding infosec research.
 
 ```
 bastet.ai
