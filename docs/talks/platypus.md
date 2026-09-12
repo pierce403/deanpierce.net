@@ -4,7 +4,7 @@ description: remote password extraction from password managers
 
 # Platypus
 
-Delivered at BSides Las Vegas Underground track the same morning as Silk Road got taken down. (2013)
+Presented on the Underground track at BSides Las Vegas (2013).
 
 The silk road thing was actually super relevant because I had an awesome demo where I could extract the silk road passwords of everyone on the local network (so long as they had their password saved in their password manager and were using the same browser that they use for day to day stuff).
 
