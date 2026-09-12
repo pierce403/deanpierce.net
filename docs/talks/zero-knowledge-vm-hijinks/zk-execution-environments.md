@@ -8,7 +8,7 @@ Presented at ETH Portland 2023, this talk introduced the concept of Zero Knowled
 
 ## Highlights
 
-- Introduced Zero Knowledge Execution Environments as computing environments where provers execute arbitrary programs and provide 100% guarantees to verifiers without disclosing all inputs/outputs
+- Introduced Zero Knowledge Execution Environments as computing environments where provers execute arbitrary programs and provide strong cryptographic assurance of correct execution to verifiers, subject to the proof system's security assumptions, without disclosing all inputs/outputs
 - Covered the evolution of ZK technology: from Zero Knowledge Proofs to Gadgets, Circuits, and State Machines
 - Explored ZK applications: Tornado.cash for privacy, Dark Forest for ZK gaming with Perlin noise "fog of war", Proof of Exploitability for automated bug triage, and ZKML for verifiable AI models
 - Discussed blockchain scaling through ZK rollups and ZkEVM, enabling "basically unlimited scaling"
