@@ -1,5 +1,5 @@
 ---
-description: Not BTC eventually..
+description: Not BTC eventually.
 ---
 
 # BTC Now
