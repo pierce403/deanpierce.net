@@ -31,6 +31,7 @@ This document exists to brief any automations, agents, or contributors interacti
 
 ## Known Conventions & Pitfalls
 
+- The standalone `docs/resume.html` owns both the web resume and its Print / Save PDF layout. Keep contact URLs visible as text, with explicit labels and one contact per line; PDF text extraction must retain each complete URL rather than only a hyperlink label. Keep print URLs unbroken and disable browser-generated headers/footers when exporting a PDF.
 - GitBook-specific Liquid tags like `{% embed %}` are no longer supported. They were replaced with standard Markdown links (`[View resource](URL){ target=_blank }`). Avoid reintroducing Liquid tags.
 - Material's `palette` in `mkdocs.yml` is configured to default to dark mode (`scheme: slate`) with a toggle back to light mode. Preserve this behavior when editing theme options.
 - Use Material's native `navigation.expand` feature (enabled in `mkdocs.yml`) to keep the left-hand tree fully expanded—custom JavaScript is no longer required. If updating Material, reconfirm that this feature still performs as expected.
