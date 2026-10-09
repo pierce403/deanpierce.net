@@ -25,9 +25,8 @@ This document exists to brief any automations, agents, or contributors interacti
 
 ## Deployment
 
-- GitHub Pages is configured to serve from the `gh-pages` branch.
-- `.github/workflows/deploy.yml` builds the site with `mkdocs build --strict` and publishes to `gh-pages` via `peaceiris/actions-gh-pages@v3` using the automatic `GITHUB_TOKEN`.
-- Every push to `main` triggers the workflow. Monitor the "Deploy MkDocs to GitHub Pages" job for build health.
+- Cloudflare native Git publication is prepared; GitHub Actions validates only. See README and NOTES for connection and cutover status.
+- Keep the prior `gh-pages` branch/deployment and `docs/CNAME` for recovery.
 
 ## Known Conventions & Pitfalls
 
@@ -44,7 +43,7 @@ This document exists to brief any automations, agents, or contributors interacti
 - This repo adapts the [recurse.bot](https://recurse.bot/) skill convention: `SKILLS.md` is the compact catalog, and detailed procedures live in `skills/<name>/SKILL.md`.
 - Use `curator` when adding, revising, consolidating, or pruning repo-local skills.
 - Use `site-content-manager` for MkDocs content, navigation, talk/project pages, and static deck bundles.
-- Use `publish-site-change` when finishing a logical edit: build strictly, commit, push, monitor the Pages workflow, verify live URLs when useful, and leave `git status` clean.
+- Use `publish-site-change` when finishing a logical edit: build strictly, commit, push, monitor GitHub validation and the matching Cloudflare build, verify live URLs when useful, and leave `git status` clean.
 - Use `recurse-advice-sync` when pulling fresh guidance from recurse.bot and deciding whether it belongs in `AGENTS.md`, `SKILLS.md`, or a skill folder.
 
 ## Continuous Documentation
@@ -56,3 +55,13 @@ This document exists to brief any automations, agents, or contributors interacti
 
 - Updated by automation on 2026-06-25. Added repo-local `SKILLS.md` and skill folders after adapting the recurse.bot skill etiquette pattern for this MkDocs site.
 - Updated by automation on 2025-10-24. Added mandatory build testing requirement and navigation sync pitfalls after discovering broken references causing deployment failures.
+
+## Cloudflare migration lessons (2026-10-09)
+
+- Worker `deanpierce-net` publishes only `.cloudflare/site/`, leaving legacy `site/` untouched. Use `npm ci`, `npm run build`, and `npm run deploy:check`; strict MkDocs uses the baseline renderer versions in `requirements.lock`.
+- Native Git settings: `pierce403/deanpierce.net`, production `main`, root `/`, build `npm run build`, deploy `npx wrangler deploy`, paths `*`. GitHub Actions validates only; credentials stay in Cloudflare, with no GitHub Cloudflare secrets.
+- Initial config intentionally has no custom routes. Connection, workers.dev, exact custom domain, DNS import, nameservers, and public behavior must be verified independently; preparation alone is not a completed cutover.
+- Preserve canonical URL, existing public paths and standalone HTML, search, feeds, robots behavior, unrelated DNS/mail records, and prior Pages recovery source. Asset-only requests do not emit Worker invocation logs.
+- Do not overlap manual and native Git deployment. Pause automatic builds and wait before deliberate recovery; verify before re-enabling them.
+
+- Compatibility date is `2026-10-07`, the newest date supported by the bundled workerd in pinned Wrangler 4.145.0. A `2026-10-09` local runtime refused startup; this asset-only configuration uses the supported date so development and validation exercise the configured runtime. Review compatibility changes before advancing it with a future Wrangler update.

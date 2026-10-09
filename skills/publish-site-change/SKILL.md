@@ -7,7 +7,7 @@ description: Validate and publish deanpierce.net changes. Use when the user asks
 
 ## Overview
 
-Finish a logical edit by proving the site builds, committing the intended scope, pushing `main`, watching the Pages workflow, and verifying live URLs when applicable.
+Finish a logical edit by proving the site builds, committing the intended scope, pushing `main`, watching GitHub validation and the matching Cloudflare build, and verifying live URLs when applicable.
 
 ## Workflow
 
@@ -15,7 +15,7 @@ Finish a logical edit by proving the site builds, committing the intended scope,
 2. Run the strict build from the project environment:
 
 ```bash
-venv/bin/mkdocs build --strict
+npm run build
 ```
 
 3. If the venv entrypoints are broken, repair and install dependencies:
@@ -23,25 +23,29 @@ venv/bin/mkdocs build --strict
 ```bash
 venv/bin/python -m ensurepip --upgrade
 venv/bin/python -m pip install -r requirements.txt
-venv/bin/mkdocs build --strict
+npm run build
 ```
 
 4. Stage only the intended files and commit with a concise message.
 5. Push `main` to `origin`.
-6. If push is rejected because the remote moved, run `git pull --rebase origin main`, rerun `venv/bin/mkdocs build --strict`, then push again.
-7. Watch the deploy workflow:
+6. If push is rejected because the remote moved, run `git pull --rebase origin main`, rerun `npm run build`, then push again.
+7. Watch the validation workflow, then wait for the Cloudflare build for the exact pushed commit:
 
 ```bash
 gh run list --branch main --limit 5 --json databaseId,headSha,status,conclusion,workflowName,createdAt,url
 gh run watch <run-id> --exit-status
 ```
 
-8. For user-facing pages or static assets, request the live URLs with `curl -sS -L -w "%{http_code} %{url_effective}\n"`.
-9. If GitHub Pages serves stale 404s immediately after a successful deploy, inspect headers and wait through the edge cache window before declaring failure.
+8. After Cloudflare deployment, verify the workers.dev preview and intended custom domain. For user-facing pages or static assets, request the live URLs with `curl -sS -L -w "%{http_code} %{url_effective}\n"`.
+9. If the previously deployed endpoint serves stale 404s immediately after a successful deploy, inspect headers and wait through the edge cache window before declaring failure.
 10. Finish with `git status --short`.
 
 ## Notes
 
 - The repository rule is to commit and push after every logical edit.
-- `./build.sh` is valid when the correct environment is active, but `venv/bin/mkdocs build --strict` avoids accidentally using a system MkDocs without Material installed.
+- `./build.sh` is valid when the correct environment is active, but `npm run build` avoids accidentally using a system MkDocs without Material installed.
 - Do not report command output as visible to the user unless you summarize the important result.
+
+## Cloudflare transition
+
+Run `npm ci`, `npm run build`, and `npm run deploy:check` before committing. The output is `.cloudflare/site/`; prior Pages source is retained for recovery. Cloudflare holds its own Git deployment credential. GitHub Actions validates only. Never overlap manual and automatic production deployments. Connection, custom-domain/DNS cutover, and public checks must be verified separately; see NOTES for current status.
