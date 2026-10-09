@@ -60,7 +60,7 @@ This document exists to brief any automations, agents, or contributors interacti
 
 - Worker `deanpierce-net` publishes only `.cloudflare/site/`, leaving legacy `site/` untouched. Use `npm ci`, `npm run build`, and `npm run deploy:check`; strict MkDocs uses the baseline renderer versions in `requirements.lock`.
 - Native Git settings: `pierce403/deanpierce.net`, production `main`, root `/`, build `npm run build`, deploy `npx wrangler deploy`, paths `*`. GitHub Actions validates only; credentials stay in Cloudflare, with no GitHub Cloudflare secrets.
-- Initial config intentionally has no custom routes. Connection, workers.dev, exact custom domain, DNS import, nameservers, and public behavior must be verified independently; preparation alone is not a completed cutover.
+- Wrangler records only `deanpierce.net` as a custom domain route. Publish this initial route commit only after its zone is active following verified DNS import and the approved registrar delegation. Native Git provisions the hostname; connection, exact deployment, certificate, DNS, and public behavior still require independent verification.
 - Preserve canonical URL, existing public paths and standalone HTML, search, feeds, robots behavior, unrelated DNS/mail records, and prior Pages recovery source. Asset-only requests do not emit Worker invocation logs.
 - Do not overlap manual and native Git deployment. Pause automatic builds and wait before deliberate recovery; verify before re-enabling them.
 
