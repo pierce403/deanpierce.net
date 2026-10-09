@@ -49,21 +49,32 @@ npm run deploy:check
 npm run dev
 ```
 
-Configure Cloudflare Workers Builds for `pierce403/deanpierce.net`, production `main`,
-root `/`, build `npm run build`, deploy `npx wrangler deploy`, and included paths
-`*`. Once connected, a validated commit pushed to `main` lets Cloudflare fetch,
-build, and deploy. Cloudflare retains its deployment credential; no Cloudflare
+Cloudflare Workers Builds is connected to `pierce403/deanpierce.net`, production
+`main`, root `/`, build `npm run build`, deploy `npx wrangler deploy`, and included
+paths `*`. A validated commit pushed to `main` lets Cloudflare fetch, build, and
+deploy. Cloudflare retains its deployment credential; no Cloudflare
 secrets belong in GitHub. `.github/workflows/deploy.yml` now validates and saves a
 build artifact only, with no Pages or Cloudflare deployment step.
 
-Git connection, workers.dev serving, custom-domain attachment, and registrar
-cutover require separate live verification. Wrangler records only `deanpierce.net` as the exact
-custom domain route. Keep the initial route commit local until this zone is active
-after the verified DNS import and approved Namecheap delegation; then pushing
-`main` lets the native Git deployment provision the hostname. Public cutover
-requires separate DNS, certificate, and HTTPS verification. Keep the prior GitHub Pages deployment/source for
-rollback. Manual recovery must pause automatic builds and wait for active builds;
-verify recovery before re-enabling them.
+Wrangler now records the ordinary Worker route `deanpierce.net/*`, scoped to
+zone `deanpierce.net`. It covers apex paths and queries while retaining the old
+GitHub Pages apex A values in Cloudflare DNS. The apex records must be proxied,
+the zone active, and its edge certificate ready before live route verification.
+The native Git deployment manages this route; no custom-domain DNS replacement
+is requested by this configuration.
+
+This is an assets-only Worker: it has no `main` script, serves its configured
+static files, and returns the generated `404.html` with status 404 for missing
+paths. It does not fetch the old Pages origin. The route does not cover `www`,
+which needs separate redirect/path verification. The route alternative remains
+local for coordinator review; live serving is not claimed. See [NOTES](NOTES.md)
+for the failed custom-domain attempt and remaining gates. Preserve all original
+DNS/mail records and the prior GitHub Pages deployment/source for rollback.
+Manual recovery must pause automatic builds and wait for active builds; verify
+recovery before re-enabling them.
+
+Cloudflare documents [Static Assets on ordinary routes](https://developers.cloudflare.com/workers/static-assets/routing/advanced/serving-a-subdirectory/)
+and [terminal static-site 404 handling](https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/).
 
 Wrangler logs and traces are enabled, but asset-only requests bypass Worker
 execution. Use Cloudflare HTTP analytics for those requests.

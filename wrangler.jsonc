@@ -23,8 +23,8 @@
   },
   "routes": [
     {
-      "pattern": "deanpierce.net",
-      "custom_domain": true
+      "pattern": "deanpierce.net/*",
+      "zone_name": "deanpierce.net"
     }
   ]
 }
