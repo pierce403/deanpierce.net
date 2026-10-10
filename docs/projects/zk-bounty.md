@@ -9,6 +9,7 @@ Started in 2023, this project explores using zero knowledge proofs to create ful
 ## Concept
 
 The ZK Bounty system enables:
+
 - Proof of Exploitability: Researchers prove they have a working exploit without revealing it
 - Automated triage: ZK proofs verify the bug's validity programmatically
 - Private bug markets: Buyers can verify exploit authenticity before purchase
@@ -17,6 +18,7 @@ The ZK Bounty system enables:
 ## Related Talks
 
 This research was presented across the [Zero Knowledge VM Hijinks series](/talks/zero-knowledge-vm-hijinks/):
+
 - ETH Portland 2023
 - BSides Portland 2023  
 - Hushcon Seattle 2023
