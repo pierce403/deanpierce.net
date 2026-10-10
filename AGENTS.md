@@ -66,3 +66,12 @@ This document exists to brief any automations, agents, or contributors interacti
 - Do not overlap manual and native Git deployment. Pause automatic builds and wait before deliberate recovery; verify before re-enabling them.
 
 - Compatibility date is `2026-10-07`, the newest date supported by the bundled workerd in pinned Wrangler 4.145.0. A `2026-10-09` local runtime refused startup; this asset-only configuration uses the supported date so development and validation exercise the configured runtime. Review compatibility changes before advancing it with a future Wrangler update.
+
+## Sharp security maintenance
+
+- Wrangler 4.145.0 brings Miniflare with an exact sharp 0.35.4 dependency.
+  The scoped npm override pins Miniflare's sharp to 0.35.5 for
+  [GHSA-wq5f-xc86-pv6w](https://github.com/advisories/GHSA-wq5f-xc86-pv6w),
+  including the patched libvips binaries. Regenerate the lockfile with npm,
+  validate `npm ci`, the strict site build and the deployment dry run, and
+  remove the override once the pinned upstream tooling selects a patched sharp.
