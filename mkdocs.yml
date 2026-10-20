@@ -14,16 +14,16 @@ nav:
           - HACKBOAT June 2025: talks/portland-hacker-foundation/hackboat-june-2025.md
           - BSides Portland 2025: talks/portland-hacker-foundation/october-2025.md
           - ToorCamp 2026: talks/portland-hacker-foundation/hacker-foundation-hijinks.md
-      - Slop Mines:
+      - Agentic Security:
           - Overview: talks/slop-mines/index.md
-          - ToorCamp 2026: talks/slop-mines/working-the-slop-mines.md
+          - Working the Slop Mines (ToorCamp 2026): talks/slop-mines/working-the-slop-mines.md
+          - The Summoning of Bastet (ToorCamp 2024): talks/the-summoning-of-bastet.md
       - Zero Knowledge VM Hijinks:
           - Overview: talks/zero-knowledge-vm-hijinks/index.md
           - ZK Execution Environments: talks/zero-knowledge-vm-hijinks/zk-execution-environments.md
           - ZK Execution Environments 2: talks/zero-knowledge-vm-hijinks/zk-execution-environments-2.md
           - ZK VM Hijinks: talks/zero-knowledge-vm-hijinks/zk-vm-hijinks.md
           - "Using ZKPs to Kill *all* the Bugs (ToorCamp 2024)": talks/zero-knowledge-vm-hijinks/using-zkps-to-kill-all-the-bugs.md
-      - The Summoning of Bastet (ToorCamp 2024): talks/the-summoning-of-bastet.md
       - "Rolodex: Tools and Techniques for Mapping the Human Attack Surface (ToorCamp 2022)": talks/rolodex.md
       - Web3 Hacking:
           - Overview: talks/web3-hacking/index.md

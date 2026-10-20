@@ -12,3 +12,4 @@ This five-minute talk explores sustainable funding for security research and the
 
 - [ToorCamp schedule entry](https://talks.toorcon.net/toorcamp-2024/talk/8C8NCJ/){ target=_blank }
 - [Bastet.ai project](../projects/bastet.ai.md)
+- [Agentic Security talks](slop-mines/index.md)

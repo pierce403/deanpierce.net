@@ -1,11 +1,12 @@
 ---
-description: Talks about AI-generated work, automation pressure, and resilient development pipelines
+description: Talks about agentic security, autonomous systems, and AI-assisted security research
 ---
 
-# Slop Mines
+# Agentic Security
 
-Talks about working with, around, and through machine-generated output: hardened development pipelines, AI-assisted labor, autonomous incentive structures, and what human-computer interaction looks like when more work can be delegated to machines.
+Talks about how AI agents and autonomous systems change security research and engineering: resilient development pipelines, AI-assisted work, incentives for funding research, and how people and communities can direct these tools.
 
 ## Talks
 
 - [Working the Slop Mines](working-the-slop-mines.md) - ToorCamp 2026
+- [The Summoning of Bastet](../the-summoning-of-bastet.md) - ToorCamp 2024
