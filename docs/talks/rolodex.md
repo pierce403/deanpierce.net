@@ -12,7 +12,7 @@ It covered a full attack flow and end to end methodology, from recon to dumping 
 
 Code: [https://github.com/pierce403/rolodex](https://github.com/pierce403/rolodex)
 
-[View resource](https://docs.google.com/presentation/d/1-92H8zSuO98KOGn7YN9WTkNIGYaC_YkcmP6CXJbtSUQ/edit){ target=_blank }
+[View Slides](https://docs.google.com/presentation/d/1-92H8zSuO98KOGn7YN9WTkNIGYaC_YkcmP6CXJbtSUQ/edit){ target=_blank }
 
 Video: Video exists, but I can't find it right now. If you want to see it, bug me and I'll probably be able to find it later :-D
 

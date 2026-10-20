@@ -14,6 +14,10 @@ This 20-minute talk explores how zero-knowledge proofs can improve software secu
 - Economically backed claims about software security.
 - Automated security metrics across the software supply chain.
 
+## Slides
+
+[View Slides](https://docs.google.com/presentation/d/1eEFwzlsuo9iPPRquMLWUlP_noAG8sAWIXA-Knvgs368/edit){ target=_blank }
+
 ## Resources
 
 - [ToorCamp schedule entry](https://talks.toorcon.net/toorcamp-2024/talk/EJMJPJ/){ target=_blank }
