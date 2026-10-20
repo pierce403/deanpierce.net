@@ -6,6 +6,12 @@ description: BSides Portland - October 2023
 
 Presented at BSides Portland 2023, this iteration focused more on security and privacy applications, particularly Proof of Exploitability for the infosec community.
 
+## Recording
+
+<iframe width="560" height="315" style="width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0;" src="https://www.youtube.com/embed/94bxygwaHxo" title="BSides PDX 2023 - Fun With Zero Knowledge Execution Environments (Dean Pierce)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+[Watch on YouTube](https://www.youtube.com/watch?v=94bxygwaHxo){ target=_blank }
+
 ## Highlights
 
 - Reframed Zero Knowledge Execution Environments as a new way to think about emerging ZK technologies with implications for privacy, scalability, and verifiable computing
