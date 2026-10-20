@@ -22,7 +22,9 @@ nav:
           - ZK Execution Environments: talks/zero-knowledge-vm-hijinks/zk-execution-environments.md
           - ZK Execution Environments 2: talks/zero-knowledge-vm-hijinks/zk-execution-environments-2.md
           - ZK VM Hijinks: talks/zero-knowledge-vm-hijinks/zk-vm-hijinks.md
-      - Rolodex: talks/rolodex.md
+          - "Using ZKPs to Kill *all* the Bugs (ToorCamp 2024)": talks/zero-knowledge-vm-hijinks/using-zkps-to-kill-all-the-bugs.md
+      - The Summoning of Bastet (ToorCamp 2024): talks/the-summoning-of-bastet.md
+      - "Rolodex: Tools and Techniques for Mapping the Human Attack Surface (ToorCamp 2022)": talks/rolodex.md
       - Web3 Hacking:
           - Overview: talks/web3-hacking/index.md
           - They Put Money on the Internet!: talks/web3-hacking/they-put-money-on-the-internet.md

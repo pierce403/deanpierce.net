@@ -4,7 +4,7 @@ description: ZK Fun Times
 
 # Zero Knowledge VM Hijinks
 
-A series of talks delivered across 2023 bringing awareness of Zero Knowledge technologies to different communities, each tailored to the audience's interests and concerns.
+A series of talks delivered across 2023 and 2024 bringing awareness of Zero Knowledge technologies to different communities, each tailored to the audience's interests and concerns.
 
 ## The Series
 
@@ -17,6 +17,8 @@ This research thread explores Zero Knowledge Execution Environments—computing 
 - **BSides Portland (October 2023)**: Emphasized security and privacy applications for the infosec community, particularly Zero Knowledge Proof of Exploitability for automated bug triage and private bug markets
 
 - **Hushcon Seattle (December 2023)**: Explored automated bug markets, self-healing software supply chains, and addressed security community concerns about ZK ransomware scenarios
+
+- **[ToorCamp (June 2024): Using ZKPs to Kill *all* the Bugs](using-zkps-to-kill-all-the-bugs.md)**: Explored proofs of exploitability, automated bug bounty triage, and economically backed software security claims
 
 ## Core Themes
 
