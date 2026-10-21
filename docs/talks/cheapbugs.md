@@ -10,4 +10,7 @@ This project was inspired by high end exploit feeds offered by groups like Exodu
 
 code: [https://github.com/pierce403/CheapBugs](https://github.com/pierce403/CheapBugs)
 
-[View resource](https://www.youtube.com/watch?v=tksYvAVKqxM){ target=_blank }
+## Resources
+
+- [Watch on YouTube](https://www.youtube.com/watch?v=tksYvAVKqxM){ target=_blank } - **CheapBugs.Net: Low-End Bug Bounties for the Masses**, ShmooCon Firetalks 2016.
+- [ShmooCon Firetalks 2016 video archive](https://www.irongeek.com/i.php?page=videos/shmoocon-firetalks-2016){ target=_blank }

@@ -6,6 +6,8 @@ description: BSides Portland • October 2025
 
 Returning to BSides Portland 2025, I shared the Portland Hacker Foundation's first year of measurable impact.
 
+Presented as **Portland Hacker Foundation: Asymmetric Impact Year 1**.
+
 ## Highlights
 
 - Published metrics on funded research, community workshops, and local hiring outcomes.
@@ -14,5 +16,7 @@ Returning to BSides Portland 2025, I shared the Portland Hacker Foundation's fir
 
 ## Resources
 
+- [Watch Friday's Track 2 recording on YouTube](https://www.youtube.com/watch?v=1wGiRXEIIAc){ target=_blank } - full track recording; this session was scheduled for 11:00 AM Pacific.
+- [Conference schedule and session details](https://bsidespdx.org/events/2025/schedule.html#event-44){ target=_blank }
 - [View Slides](https://gamma.app/docs/Portland-Hacker-Foundation-jno0rsrcnki80rl){ target=_blank }
 - Annual report draft: _coming soon_

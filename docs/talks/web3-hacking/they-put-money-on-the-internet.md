@@ -1,10 +1,10 @@
 ---
-description: BSides Portland ~2018 - Intro to emerging smart contract threats
+description: BSides Portland 2019 - Intro to emerging smart contract threats
 ---
 
 # They Put Money on the Internet
 
-An introduction to emerging smart contract threats presented at BSides Portland (circa 2018), with special emphasis on oracle manipulation vulnerabilities and economic attack vectors.
+An introduction to emerging smart contract threats presented at BSides Portland in October 2019, with special emphasis on oracle manipulation vulnerabilities and economic attack vectors.
 
 ## Context
 
@@ -18,4 +18,7 @@ As smart contracts began holding significant value, this talk explored the new a
 - Real-world examples of oracle-based exploits
 - Defense strategies for smart contract developers
 
-_Note: Slides for this presentation may be available upon request._
+## Resources
+
+- [Watch on YouTube](https://www.youtube.com/watch?v=9JByMt7PvBY){ target=_blank }
+- [View Slides](https://docs.google.com/presentation/d/19ysNZjIdFY0yQPxVUkyL3nY4M0smjBF19lfNdLiDRY0/edit){ target=_blank }

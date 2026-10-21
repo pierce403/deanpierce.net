@@ -6,6 +6,8 @@ description: BSides Portland • October 2024
 
 At BSides Portland 2024 I announced the concept for the Portland Hacker Foundation.
 
+Presented as **Asymmetric Impact: Adventures in funding infosec research**.
+
 ## Highlights
 
 - Explored the broken incentive structures in security: companies prioritize compliance over user safety, and resource allocation for fixing vulnerabilities is challenging
@@ -19,5 +21,6 @@ At BSides Portland 2024 I announced the concept for the Portland Hacker Foundati
 
 ## Resources
 
+- [Watch on YouTube](https://www.youtube.com/watch?v=_-dP9__70ZE){ target=_blank }
 - [View Slides](https://docs.google.com/presentation/d/1X75MCUqBHxzFtHjrV63kYkeXcNTKgm8k1BEPJTzqejE/edit?slide=id.p#slide=id.p){ target=_blank }
 - Contact: deanpierce.eth / dean@deanpierce.net

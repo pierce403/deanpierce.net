@@ -30,6 +30,7 @@ This document exists to brief any automations, agents, or contributors interacti
 
 ## Known Conventions & Pitfalls
 
+- For talk resource links, verify the exact title, speaker, and event edition. Drive's `shared` flag can mean sharing with individual collaborators; check for an `anyone` permission before treating a deck as publicly readable. Prefer public conference slide archives where available.
 - The standalone `docs/resume.html` owns both the web resume and its Print / Save PDF layout. Its `<title>` is the requested PDF basename (`Dean_Resume_2026`), which browsers use to suggest the Save as PDF filename. Keep contact URLs visible as text, with explicit labels and one contact per line; PDF text extraction must retain each complete URL rather than only a hyperlink label. Keep print URLs unbroken and disable browser-generated headers/footers when exporting a PDF.
 - GitBook-specific Liquid tags like `{% embed %}` are no longer supported. They were replaced with standard Markdown links (`[View resource](URL){ target=_blank }`). Avoid reintroducing Liquid tags.
 - Material's `palette` in `mkdocs.yml` is configured to default to dark mode (`scheme: slate`) with a toggle back to light mode. Preserve this behavior when editing theme options.
